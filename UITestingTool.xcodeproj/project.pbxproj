@@ -10,7 +10,6 @@
 		0640A52A26BC1C62004F2E5E /* WaitInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0640A52926BC1C62004F2E5E /* WaitInteraction.swift */; };
 		0640A53126BC1D30004F2E5E /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0640A53026BC1D30004F2E5E /* Time.swift */; };
 		0640A53826BC1D82004F2E5E /* UITestingTool+WaitInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0640A53726BC1D82004F2E5E /* UITestingTool+WaitInteraction.swift */; };
-		0640A54E26BC2198004F2E5E /* WaitInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0640A54D26BC2198004F2E5E /* WaitInteractionWorker.swift */; };
 		067224CE261751EA00D15B24 /* UITestingConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067224CB261751EA00D15B24 /* UITestingConfiguration.swift */; };
 		067224FE261752E400D15B24 /* libUITestingConfiguration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0672249D2617518E00D15B24 /* libUITestingConfiguration.a */; };
 		06722501261752F500D15B24 /* libUITestingConfiguration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0672249D2617518E00D15B24 /* libUITestingConfiguration.a */; };
@@ -39,21 +38,13 @@
 		068CA227260E07F600EAC0EE /* DemoAppUIKit_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068CA226260E07F600EAC0EE /* DemoAppUIKit_UITests.swift */; };
 		068CA240260E0B5A00EAC0EE /* libUITestingTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 068CA176260DEDF600EAC0EE /* libUITestingTool.a */; };
 		068CA261260E184C00EAC0EE /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068CA260260E184C00EAC0EE /* Driver.swift */; };
-		068CA2B0260E295800EAC0EE /* XCUITestDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068CA2AF260E295800EAC0EE /* XCUITestDriver.swift */; };
 		068CA3B2261357C700EAC0EE /* InteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068CA3A7261356FD00EAC0EE /* InteractionWorker.swift */; };
-		068CA3C12613AC3900EAC0EE /* VisibilityAssertInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068CA3C02613AC3800EAC0EE /* VisibilityAssertInteractionWorker.swift */; };
-		068CA3CE2613AF9800EAC0EE /* Assert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068CA3CD2613AF9800EAC0EE /* Assert.swift */; };
 		068CA3D32613B2F200EAC0EE /* InteractionElementWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068CA3D22613B2F200EAC0EE /* InteractionElementWorker.swift */; };
-		068CA3E52613B56F00EAC0EE /* AccessibilityElementInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068CA3E42613B56F00EAC0EE /* AccessibilityElementInteractionWorker.swift */; };
 		068CA3ED2614635D00EAC0EE /* UITesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068CA3EC2614635C00EAC0EE /* UITesting.swift */; };
 		068CA43626160CFC00EAC0EE /* TestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068CA43526160CFB00EAC0EE /* TestCase.swift */; };
 		069E5B1F2859F2360005A6DC /* libUITestingConfiguration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0672249D2617518E00D15B24 /* libUITestingConfiguration.a */; };
 		069E5B27285A05F60005A6DC /* ConfigurationDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E5B25285A05F60005A6DC /* ConfigurationDecoderTests.swift */; };
 		069E5B28285A05F60005A6DC /* ConfigurationEncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E5B26285A05F60005A6DC /* ConfigurationEncoderTests.swift */; };
-		069E5B2B285A06CC0005A6DC /* ValueInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E5B2A285A06CC0005A6DC /* ValueInteractionWorker.swift */; };
-		069E5B2D285A06EE0005A6DC /* ToggleAssertInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E5B2C285A06EE0005A6DC /* ToggleAssertInteractionWorker.swift */; };
-		069E5B30285A07200005A6DC /* PickerWheelInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E5B2E285A07200005A6DC /* PickerWheelInteractionWorker.swift */; };
-		069E5B31285A07200005A6DC /* LongPressInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E5B2F285A07200005A6DC /* LongPressInteractionWorker.swift */; };
 		069E5B4B285A0C1E0005A6DC /* Assert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068CA3C52613AF4D00EAC0EE /* Assert.swift */; };
 		069E5B4C285A0CDB0005A6DC /* XCUITestDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068CA25F260E182E00EAC0EE /* XCUITestDriver.swift */; };
 		069E5B4D285A0CE30005A6DC /* ValueInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A93E952811A01C00B88C87 /* ValueInteractionWorker.swift */; };
@@ -71,27 +62,21 @@
 		069E5B59285A0CF60005A6DC /* SelectedAssertInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F13FEE26458B1900136813 /* SelectedAssertInteractionWorker.swift */; };
 		069E5B5A285A0CFA0005A6DC /* TextElementInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA8A6426318E340032D788 /* TextElementInteractionWorker.swift */; };
 		069E5B5B285A0CFA0005A6DC /* AccessibilityElementInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068CA2B8260E29CB00EAC0EE /* AccessibilityElementInteractionWorker.swift */; };
+		069E5B5E285A0DEF0005A6DC /* libXCUITestDriver.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 069E5B43285A0BE60005A6DC /* libXCUITestDriver.a */; };
+		069E5B61285A0F370005A6DC /* libUITestingTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 068CA176260DEDF600EAC0EE /* libUITestingTool.a */; };
 		06A93E9328119EE400B88C87 /* ValueInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A93E9228119EE400B88C87 /* ValueInteraction.swift */; };
 		06A93EAA2811A15200B88C87 /* UITestingTool+Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A93EA92811A15200B88C87 /* UITestingTool+Value.swift */; };
 		06BC59C1262E06600022ACF9 /* EnabledAssertInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BC59C0262E06600022ACF9 /* EnabledAssertInteraction.swift */; };
-		06BC59C8262E07300022ACF9 /* EnabledAssertInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BC59C7262E07300022ACF9 /* EnabledAssertInteractionWorker.swift */; };
 		06BC5A62262F092B0022ACF9 /* SlideActionInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BC5A61262F092B0022ACF9 /* SlideActionInteraction.swift */; };
-		06BC5A69262F0A7E0022ACF9 /* SlideActionInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BC5A68262F0A7E0022ACF9 /* SlideActionInteractionWorker.swift */; };
 		06BC5AC8262F0FD00022ACF9 /* KeyboardInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BC5AC7262F0FD00022ACF9 /* KeyboardInteraction.swift */; };
-		06BC5AFF262F19C80022ACF9 /* KeyboardInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BC5AFE262F19C80022ACF9 /* KeyboardInteractionWorker.swift */; };
 		06CA8A2026318CBB0032D788 /* ElementType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA8A1F26318CBB0032D788 /* ElementType.swift */; };
 		06CA8A6A26318E8E0032D788 /* TextElementInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA8A6926318E8E0032D788 /* TextElementInteraction.swift */; };
 		06CA8A7026318EB20032D788 /* UITestingTool+TextElementInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA8A6F26318EB20032D788 /* UITestingTool+TextElementInteraction.swift */; };
-		06CA8A7626318F370032D788 /* TextElementInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA8A7526318F370032D788 /* TextElementInteractionWorker.swift */; };
 		06CA8AA62631905A0032D788 /* UITestingTool+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA8AA52631905A0032D788 /* UITestingTool+Keyboard.swift */; };
 		06CCE2B026284AD6001A4955 /* TextAssertInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CCE2AF26284AD6001A4955 /* TextAssertInteraction.swift */; };
-		06CCE2B726284B8B001A4955 /* TextAssertInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CCE2B626284B8B001A4955 /* TextAssertInteractionWorker.swift */; };
-		06CCE2DA262868C0001A4955 /* TapActionInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CCE2D9262868C0001A4955 /* TapActionInteractionWorker.swift */; };
 		06F13FE926458AD400136813 /* SelectedAssertInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F13FE826458AD400136813 /* SelectedAssertInteraction.swift */; };
 		06F1401626458C4B00136813 /* UITestingTool+SelectedAssertInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F1401526458C4B00136813 /* UITestingTool+SelectedAssertInteraction.swift */; };
-		06F1401C26458CA100136813 /* SelectedAssertInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F1401B26458CA100136813 /* SelectedAssertInteractionWorker.swift */; };
 		06F1405E2649662700136813 /* ScrollActionInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F1405D2649662700136813 /* ScrollActionInteraction.swift */; };
-		06F14069264968FC00136813 /* ScrollActionInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F14068264968FC00136813 /* ScrollActionInteractionWorker.swift */; };
 		06F140A5264D5D3900136813 /* UITestingTool+ScrollActionInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F140A4264D5D3900136813 /* UITestingTool+ScrollActionInteraction.swift */; };
 		06F140AC264D63A600136813 /* VerticalScrollingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F140AB264D63A600136813 /* VerticalScrollingController.swift */; };
 		06F140B2264D63B600136813 /* HorizontalScrollingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F140B1264D63B600136813 /* HorizontalScrollingController.swift */; };
@@ -140,6 +125,20 @@
 			remoteGlobalIDString = 0672249C2617518E00D15B24;
 			remoteInfo = UITestingConfiguration;
 		};
+		069E5B5C285A0DE20005A6DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 068CA16E260DEDF600EAC0EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 069E5B42285A0BE60005A6DC;
+			remoteInfo = XCUITestDriver;
+		};
+		069E5B5F285A0F320005A6DC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 068CA16E260DEDF600EAC0EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 068CA175260DEDF600EAC0EE;
+			remoteInfo = UITestingTool;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -177,7 +176,6 @@
 		0640A53026BC1D30004F2E5E /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		0640A53726BC1D82004F2E5E /* UITestingTool+WaitInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITestingTool+WaitInteraction.swift"; sourceTree = "<group>"; };
 		0640A54626BC20E2004F2E5E /* WaitInteractionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitInteractionWorker.swift; sourceTree = "<group>"; };
-		0640A54D26BC2198004F2E5E /* WaitInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitInteractionWorker.swift; sourceTree = "<group>"; };
 		0672249D2617518E00D15B24 /* libUITestingConfiguration.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libUITestingConfiguration.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		067224CB261751EA00D15B24 /* UITestingConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITestingConfiguration.swift; sourceTree = "<group>"; };
 		067225072617537A00D15B24 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
@@ -209,24 +207,16 @@
 		068CA228260E07F600EAC0EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		068CA25F260E182E00EAC0EE /* XCUITestDriver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCUITestDriver.swift; sourceTree = "<group>"; };
 		068CA260260E184C00EAC0EE /* Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
-		068CA2AF260E295800EAC0EE /* XCUITestDriver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCUITestDriver.swift; sourceTree = "<group>"; };
 		068CA2B8260E29CB00EAC0EE /* AccessibilityElementInteractionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityElementInteractionWorker.swift; sourceTree = "<group>"; };
 		068CA3A7261356FD00EAC0EE /* InteractionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionWorker.swift; sourceTree = "<group>"; };
 		068CA3B72613ABFD00EAC0EE /* VisibilityAssertInteractionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisibilityAssertInteractionWorker.swift; sourceTree = "<group>"; };
-		068CA3C02613AC3800EAC0EE /* VisibilityAssertInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisibilityAssertInteractionWorker.swift; sourceTree = "<group>"; };
 		068CA3C52613AF4D00EAC0EE /* Assert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assert.swift; sourceTree = "<group>"; };
-		068CA3CD2613AF9800EAC0EE /* Assert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assert.swift; sourceTree = "<group>"; };
 		068CA3D22613B2F200EAC0EE /* InteractionElementWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionElementWorker.swift; sourceTree = "<group>"; };
-		068CA3E42613B56F00EAC0EE /* AccessibilityElementInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibilityElementInteractionWorker.swift; sourceTree = "<group>"; };
 		068CA3EC2614635C00EAC0EE /* UITesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITesting.swift; sourceTree = "<group>"; };
 		068CA43526160CFB00EAC0EE /* TestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCase.swift; sourceTree = "<group>"; };
 		069E5B1B2859F2350005A6DC /* UITestingConfiguration_UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITestingConfiguration_UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		069E5B25285A05F60005A6DC /* ConfigurationDecoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationDecoderTests.swift; sourceTree = "<group>"; };
 		069E5B26285A05F60005A6DC /* ConfigurationEncoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationEncoderTests.swift; sourceTree = "<group>"; };
-		069E5B2A285A06CC0005A6DC /* ValueInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueInteractionWorker.swift; sourceTree = "<group>"; };
-		069E5B2C285A06EE0005A6DC /* ToggleAssertInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleAssertInteractionWorker.swift; sourceTree = "<group>"; };
-		069E5B2E285A07200005A6DC /* PickerWheelInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerWheelInteractionWorker.swift; sourceTree = "<group>"; };
-		069E5B2F285A07200005A6DC /* LongPressInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongPressInteractionWorker.swift; sourceTree = "<group>"; };
 		069E5B32285A073E0005A6DC /* LongPressInteractionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressInteractionWorker.swift; sourceTree = "<group>"; };
 		069E5B43285A0BE60005A6DC /* libXCUITestDriver.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libXCUITestDriver.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		06A93E9228119EE400B88C87 /* ValueInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueInteraction.swift; sourceTree = "<group>"; };
@@ -234,31 +224,23 @@
 		06A93EA92811A15200B88C87 /* UITestingTool+Value.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITestingTool+Value.swift"; sourceTree = "<group>"; };
 		06BC59C0262E06600022ACF9 /* EnabledAssertInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnabledAssertInteraction.swift; sourceTree = "<group>"; };
 		06BC59C6262E06ED0022ACF9 /* EnabledAssertInteractionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnabledAssertInteractionWorker.swift; sourceTree = "<group>"; };
-		06BC59C7262E07300022ACF9 /* EnabledAssertInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnabledAssertInteractionWorker.swift; sourceTree = "<group>"; };
 		06BC5A61262F092B0022ACF9 /* SlideActionInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideActionInteraction.swift; sourceTree = "<group>"; };
 		06BC5A67262F0A2A0022ACF9 /* SlideActionInteractionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideActionInteractionWorker.swift; sourceTree = "<group>"; };
-		06BC5A68262F0A7E0022ACF9 /* SlideActionInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideActionInteractionWorker.swift; sourceTree = "<group>"; };
 		06BC5AC7262F0FD00022ACF9 /* KeyboardInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardInteraction.swift; sourceTree = "<group>"; };
 		06BC5ACD262F10120022ACF9 /* KeyboardInteractionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardInteractionWorker.swift; sourceTree = "<group>"; };
-		06BC5AFE262F19C80022ACF9 /* KeyboardInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardInteractionWorker.swift; sourceTree = "<group>"; };
 		06CA8A1F26318CBB0032D788 /* ElementType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementType.swift; sourceTree = "<group>"; };
 		06CA8A6426318E340032D788 /* TextElementInteractionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextElementInteractionWorker.swift; sourceTree = "<group>"; };
 		06CA8A6926318E8E0032D788 /* TextElementInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextElementInteraction.swift; sourceTree = "<group>"; };
 		06CA8A6F26318EB20032D788 /* UITestingTool+TextElementInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITestingTool+TextElementInteraction.swift"; sourceTree = "<group>"; };
-		06CA8A7526318F370032D788 /* TextElementInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextElementInteractionWorker.swift; sourceTree = "<group>"; };
 		06CA8AA52631905A0032D788 /* UITestingTool+Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITestingTool+Keyboard.swift"; sourceTree = "<group>"; };
 		06CCE2AF26284AD6001A4955 /* TextAssertInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAssertInteraction.swift; sourceTree = "<group>"; };
 		06CCE2B526284B31001A4955 /* TextAssertInteractionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAssertInteractionWorker.swift; sourceTree = "<group>"; };
-		06CCE2B626284B8B001A4955 /* TextAssertInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextAssertInteractionWorker.swift; sourceTree = "<group>"; };
 		06CCE2D72628683C001A4955 /* TapActionInteractionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapActionInteractionWorker.swift; sourceTree = "<group>"; };
-		06CCE2D9262868C0001A4955 /* TapActionInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapActionInteractionWorker.swift; sourceTree = "<group>"; };
 		06F13FE826458AD400136813 /* SelectedAssertInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedAssertInteraction.swift; sourceTree = "<group>"; };
 		06F13FEE26458B1900136813 /* SelectedAssertInteractionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedAssertInteractionWorker.swift; sourceTree = "<group>"; };
 		06F1401526458C4B00136813 /* UITestingTool+SelectedAssertInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITestingTool+SelectedAssertInteraction.swift"; sourceTree = "<group>"; };
-		06F1401B26458CA100136813 /* SelectedAssertInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedAssertInteractionWorker.swift; sourceTree = "<group>"; };
 		06F1405D2649662700136813 /* ScrollActionInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollActionInteraction.swift; sourceTree = "<group>"; };
 		06F14067264968AB00136813 /* ScrollActionInteractionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollActionInteractionWorker.swift; sourceTree = "<group>"; };
-		06F14068264968FC00136813 /* ScrollActionInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollActionInteractionWorker.swift; sourceTree = "<group>"; };
 		06F140A4264D5D3900136813 /* UITestingTool+ScrollActionInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITestingTool+ScrollActionInteraction.swift"; sourceTree = "<group>"; };
 		06F140AB264D63A600136813 /* VerticalScrollingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalScrollingController.swift; sourceTree = "<group>"; };
 		06F140B1264D63B600136813 /* HorizontalScrollingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollingController.swift; sourceTree = "<group>"; };
@@ -302,6 +284,7 @@
 			files = (
 				067224FE261752E400D15B24 /* libUITestingConfiguration.a in Frameworks */,
 				068CA240260E0B5A00EAC0EE /* libUITestingTool.a in Frameworks */,
+				069E5B5E285A0DEF0005A6DC /* libXCUITestDriver.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +300,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				069E5B61285A0F370005A6DC /* libUITestingTool.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,14 +320,6 @@
 			isa = PBXGroup;
 			children = (
 				0640A54626BC20E2004F2E5E /* WaitInteractionWorker.swift */,
-			);
-			path = Wait;
-			sourceTree = "<group>";
-		};
-		0640A54C26BC2198004F2E5E /* Wait */ = {
-			isa = PBXGroup;
-			children = (
-				0640A54D26BC2198004F2E5E /* WaitInteractionWorker.swift */,
 			);
 			path = Wait;
 			sourceTree = "<group>";
@@ -497,7 +473,6 @@
 				068CA3EC2614635C00EAC0EE /* UITesting.swift */,
 				067225072617537A00D15B24 /* AppConfiguration.swift */,
 				068CA43526160CFB00EAC0EE /* TestCase.swift */,
-				068CA2AE260E295800EAC0EE /* XCUITest */,
 				068CA3F52614F98400EAC0EE /* Tests */,
 			);
 			path = DemoAppUIKit_UITests;
@@ -533,21 +508,6 @@
 			path = XCUITest;
 			sourceTree = "<group>";
 		};
-		068CA2AE260E295800EAC0EE /* XCUITest */ = {
-			isa = PBXGroup;
-			children = (
-				0640A54C26BC2198004F2E5E /* Wait */,
-				06CCE2D8262868C0001A4955 /* Action */,
-				068CA3BF2613AC3800EAC0EE /* Assert */,
-				068CA3CD2613AF9800EAC0EE /* Assert.swift */,
-				068CA3E32613B56F00EAC0EE /* Element */,
-				069E5B29285A06CC0005A6DC /* Value */,
-				068CA2AF260E295800EAC0EE /* XCUITestDriver.swift */,
-			);
-			name = XCUITest;
-			path = UITestingTool/Drivers/XCUITest;
-			sourceTree = SOURCE_ROOT;
-		};
 		068CA2B7260E298B00EAC0EE /* Element */ = {
 			isa = PBXGroup;
 			children = (
@@ -567,27 +527,6 @@
 				068CA3B72613ABFD00EAC0EE /* VisibilityAssertInteractionWorker.swift */,
 			);
 			path = Assert;
-			sourceTree = "<group>";
-		};
-		068CA3BF2613AC3800EAC0EE /* Assert */ = {
-			isa = PBXGroup;
-			children = (
-				06BC59C7262E07300022ACF9 /* EnabledAssertInteractionWorker.swift */,
-				06F1401B26458CA100136813 /* SelectedAssertInteractionWorker.swift */,
-				06CCE2B626284B8B001A4955 /* TextAssertInteractionWorker.swift */,
-				069E5B2C285A06EE0005A6DC /* ToggleAssertInteractionWorker.swift */,
-				068CA3C02613AC3800EAC0EE /* VisibilityAssertInteractionWorker.swift */,
-			);
-			path = Assert;
-			sourceTree = "<group>";
-		};
-		068CA3E32613B56F00EAC0EE /* Element */ = {
-			isa = PBXGroup;
-			children = (
-				068CA3E42613B56F00EAC0EE /* AccessibilityElementInteractionWorker.swift */,
-				06CA8A7526318F370032D788 /* TextElementInteractionWorker.swift */,
-			);
-			path = Element;
 			sourceTree = "<group>";
 		};
 		068CA3F126146CA600EAC0EE /* Extensions */ = {
@@ -624,14 +563,6 @@
 			path = UITestingConfiguration_UnitTests;
 			sourceTree = "<group>";
 		};
-		069E5B29285A06CC0005A6DC /* Value */ = {
-			isa = PBXGroup;
-			children = (
-				069E5B2A285A06CC0005A6DC /* ValueInteractionWorker.swift */,
-			);
-			path = Value;
-			sourceTree = "<group>";
-		};
 		06A93E9128118CB200B88C87 /* Value */ = {
 			isa = PBXGroup;
 			children = (
@@ -657,19 +588,6 @@
 				06F14067264968AB00136813 /* ScrollActionInteractionWorker.swift */,
 				06BC5A67262F0A2A0022ACF9 /* SlideActionInteractionWorker.swift */,
 				06CCE2D72628683C001A4955 /* TapActionInteractionWorker.swift */,
-			);
-			path = Action;
-			sourceTree = "<group>";
-		};
-		06CCE2D8262868C0001A4955 /* Action */ = {
-			isa = PBXGroup;
-			children = (
-				06BC5AFE262F19C80022ACF9 /* KeyboardInteractionWorker.swift */,
-				069E5B2F285A07200005A6DC /* LongPressInteractionWorker.swift */,
-				069E5B2E285A07200005A6DC /* PickerWheelInteractionWorker.swift */,
-				06F14068264968FC00136813 /* ScrollActionInteractionWorker.swift */,
-				06BC5A68262F0A7E0022ACF9 /* SlideActionInteractionWorker.swift */,
-				06CCE2D9262868C0001A4955 /* TapActionInteractionWorker.swift */,
 			);
 			path = Action;
 			sourceTree = "<group>";
@@ -760,6 +678,7 @@
 			dependencies = (
 				067224FD261752DC00D15B24 /* PBXTargetDependency */,
 				068CA232260E08A100EAC0EE /* PBXTargetDependency */,
+				069E5B5D285A0DE20005A6DC /* PBXTargetDependency */,
 				068CA22A260E07F600EAC0EE /* PBXTargetDependency */,
 			);
 			name = DemoAppUIKit_UITests;
@@ -796,6 +715,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				069E5B60285A0F320005A6DC /* PBXTargetDependency */,
 			);
 			name = XCUITestDriver;
 			productName = XCUITestDriver;
@@ -957,28 +877,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				069E5B2D285A06EE0005A6DC /* ToggleAssertInteractionWorker.swift in Sources */,
 				068CA3ED2614635D00EAC0EE /* UITesting.swift in Sources */,
-				068CA2B0260E295800EAC0EE /* XCUITestDriver.swift in Sources */,
 				067225082617537A00D15B24 /* AppConfiguration.swift in Sources */,
-				0640A54E26BC2198004F2E5E /* WaitInteractionWorker.swift in Sources */,
 				0672253726175F4800D15B24 /* AccessibilityConfiguration.swift in Sources */,
 				068CA43626160CFC00EAC0EE /* TestCase.swift in Sources */,
-				06F1401C26458CA100136813 /* SelectedAssertInteractionWorker.swift in Sources */,
-				06BC5AFF262F19C80022ACF9 /* KeyboardInteractionWorker.swift in Sources */,
-				06CCE2DA262868C0001A4955 /* TapActionInteractionWorker.swift in Sources */,
-				06BC59C8262E07300022ACF9 /* EnabledAssertInteractionWorker.swift in Sources */,
-				06CA8A7626318F370032D788 /* TextElementInteractionWorker.swift in Sources */,
-				069E5B31285A07200005A6DC /* LongPressInteractionWorker.swift in Sources */,
-				068CA3C12613AC3900EAC0EE /* VisibilityAssertInteractionWorker.swift in Sources */,
-				069E5B30285A07200005A6DC /* PickerWheelInteractionWorker.swift in Sources */,
-				06BC5A69262F0A7E0022ACF9 /* SlideActionInteractionWorker.swift in Sources */,
-				068CA3CE2613AF9800EAC0EE /* Assert.swift in Sources */,
 				068CA227260E07F600EAC0EE /* DemoAppUIKit_UITests.swift in Sources */,
-				068CA3E52613B56F00EAC0EE /* AccessibilityElementInteractionWorker.swift in Sources */,
-				06CCE2B726284B8B001A4955 /* TextAssertInteractionWorker.swift in Sources */,
-				069E5B2B285A06CC0005A6DC /* ValueInteractionWorker.swift in Sources */,
-				06F14069264968FC00136813 /* ScrollActionInteractionWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1042,6 +945,16 @@
 			isa = PBXTargetDependency;
 			target = 0672249C2617518E00D15B24 /* UITestingConfiguration */;
 			targetProxy = 069E5B202859F2360005A6DC /* PBXContainerItemProxy */;
+		};
+		069E5B5D285A0DE20005A6DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 069E5B42285A0BE60005A6DC /* XCUITestDriver */;
+			targetProxy = 069E5B5C285A0DE20005A6DC /* PBXContainerItemProxy */;
+		};
+		069E5B60285A0F320005A6DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 068CA175260DEDF600EAC0EE /* UITestingTool */;
+			targetProxy = 069E5B5F285A0F320005A6DC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1371,7 +1284,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_TESTING_SEARCH_PATHS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -1386,7 +1298,6 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_TESTING_SEARCH_PATHS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

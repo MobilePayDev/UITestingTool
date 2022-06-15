@@ -1,7 +1,7 @@
 import UITestingTool
 import XCTest
 
-final class XCUITestDriver: Driver {
+public final class XCUITestDriver: Driver {
 
     private(set) var element: XCUIElement!
 
@@ -9,7 +9,7 @@ final class XCUITestDriver: Driver {
     private let interactionElementWorkers: [(Interaction.Type, InteractionElementWorker.Type)]
     private let interactionWorkers: [(Interaction.Type, InteractionWorker.Type)]
 
-    init(app: XCUIApplication, interactionElementWorkers: [(Interaction.Type, InteractionElementWorker.Type)], interactionWorkers: [(Interaction.Type, InteractionWorker.Type)]) {
+    public init(app: XCUIApplication, interactionElementWorkers: [(Interaction.Type, InteractionElementWorker.Type)], interactionWorkers: [(Interaction.Type, InteractionWorker.Type)]) {
         let defaultInteractionElementWorkers: [(Interaction.Type, InteractionElementWorker.Type)] = [
             (AccessibilityElementInteraction.self, AccessibilityElementInteractionWorker.self),
             (TextElementInteraction.self, TextElementInteractionWorker.self)
@@ -34,11 +34,11 @@ final class XCUITestDriver: Driver {
         self.interactionWorkers = interactionWorkers + defaultInteractionWorkers
     }
 
-    init(interactionElementWorkers: [(Interaction.Type, InteractionElementWorker.Type)], interactionWorkers: [(Interaction.Type, InteractionWorker.Type)]) {
+    public init(interactionElementWorkers: [(Interaction.Type, InteractionElementWorker.Type)], interactionWorkers: [(Interaction.Type, InteractionWorker.Type)]) {
         fatalError("User init with XCUIApplication")
     }
 
-    func execute(_ interaction: Interaction) {
+    public func execute(_ interaction: Interaction) {
         switch interaction {
         case is ElementInteraction:
             element = element(for: interaction)
