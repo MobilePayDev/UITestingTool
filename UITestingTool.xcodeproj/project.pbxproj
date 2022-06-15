@@ -214,7 +214,6 @@
 		06BC5AC7262F0FD00022ACF9 /* KeyboardInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardInteraction.swift; sourceTree = "<group>"; };
 		06BC5ACD262F10120022ACF9 /* KeyboardInteractionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardInteractionWorker.swift; sourceTree = "<group>"; };
 		06BC5AFE262F19C80022ACF9 /* KeyboardInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardInteractionWorker.swift; sourceTree = "<group>"; };
-		06C6E1B9269EEEA500BE27D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06CA8A1F26318CBB0032D788 /* ElementType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementType.swift; sourceTree = "<group>"; };
 		06CA8A6426318E340032D788 /* TextElementInteractionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextElementInteractionWorker.swift; sourceTree = "<group>"; };
 		06CA8A6926318E8E0032D788 /* TextElementInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextElementInteraction.swift; sourceTree = "<group>"; };
@@ -238,9 +237,7 @@
 		06F140B1264D63B600136813 /* HorizontalScrollingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollingController.swift; sourceTree = "<group>"; };
 		06F6CB8A269EEF4400605EC9 /* ConfigurationEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationEncoder.swift; sourceTree = "<group>"; };
 		06F6CB91269EEF9500605EC9 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
-		06F6CB98269EF06600605EC9 /* ConfigurationEncoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationEncoderTests.swift; sourceTree = "<group>"; };
 		06F6CBA5269EF44100605EC9 /* ConfigurationDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationDecoder.swift; sourceTree = "<group>"; };
-		06F6CBAC269EF6C400605EC9 /* ConfigurationDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationDecoderTests.swift; sourceTree = "<group>"; };
 		5F3D208C26D5241800D52811 /* LongPressInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressInteraction.swift; sourceTree = "<group>"; };
 		6110DB6826FDC40D00387BBE /* PickerWheelInteractionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerWheelInteractionWorker.swift; sourceTree = "<group>"; };
 		6110DB6A26FDC43000387BBE /* PickerWheelInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerWheelInteraction.swift; sourceTree = "<group>"; };
@@ -354,7 +351,6 @@
 				0672249E2617518E00D15B24 /* UITestingConfiguration */,
 				068CA20B260E075100EAC0EE /* DemoAppUIKit */,
 				068CA225260E07F600EAC0EE /* DemoAppUIKit_UITests */,
-				06C6E1B6269EEEA500BE27D2 /* UITestingConfigurationTests */,
 				069E5B1C2859F2360005A6DC /* UITestingConfiguration_UnitTests */,
 				068CA177260DEDF600EAC0EE /* Products */,
 				068CA23F260E0B5A00EAC0EE /* Frameworks */,
@@ -615,16 +611,6 @@
 				06A93E952811A01C00B88C87 /* ValueInteractionWorker.swift */,
 			);
 			path = Value;
-			sourceTree = "<group>";
-		};
-		06C6E1B6269EEEA500BE27D2 /* UITestingConfigurationTests */ = {
-			isa = PBXGroup;
-			children = (
-				06F6CBAC269EF6C400605EC9 /* ConfigurationDecoderTests.swift */,
-				06F6CB98269EF06600605EC9 /* ConfigurationEncoderTests.swift */,
-				06C6E1B9269EEEA500BE27D2 /* Info.plist */,
-			);
-			path = UITestingConfigurationTests;
 			sourceTree = "<group>";
 		};
 		06CCE2D626286820001A4955 /* Action */ = {
