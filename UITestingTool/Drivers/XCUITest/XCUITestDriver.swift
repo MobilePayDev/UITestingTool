@@ -9,7 +9,7 @@ public final class XCUITestDriver: Driver {
     private let interactionElementWorkers: [(Interaction.Type, InteractionElementWorker.Type)]
     private let interactionWorkers: [(Interaction.Type, InteractionWorker.Type)]
 
-    public init(app: XCUIApplication, interactionElementWorkers: [(Interaction.Type, InteractionElementWorker.Type)], interactionWorkers: [(Interaction.Type, InteractionWorker.Type)]) {
+    public init(app: XCUIApplication, interactionElementWorkers: [(Interaction.Type, InteractionElementWorker.Type)] = [], interactionWorkers: [(Interaction.Type, InteractionWorker.Type)] = []) {
         let defaultInteractionElementWorkers: [(Interaction.Type, InteractionElementWorker.Type)] = [
             (AccessibilityElementInteraction.self, AccessibilityElementInteractionWorker.self),
             (TextElementInteraction.self, TextElementInteractionWorker.self)
