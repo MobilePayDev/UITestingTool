@@ -54,6 +54,23 @@
 		069E5B2D285A06EE0005A6DC /* ToggleAssertInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E5B2C285A06EE0005A6DC /* ToggleAssertInteractionWorker.swift */; };
 		069E5B30285A07200005A6DC /* PickerWheelInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E5B2E285A07200005A6DC /* PickerWheelInteractionWorker.swift */; };
 		069E5B31285A07200005A6DC /* LongPressInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E5B2F285A07200005A6DC /* LongPressInteractionWorker.swift */; };
+		069E5B4B285A0C1E0005A6DC /* Assert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068CA3C52613AF4D00EAC0EE /* Assert.swift */; };
+		069E5B4C285A0CDB0005A6DC /* XCUITestDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068CA25F260E182E00EAC0EE /* XCUITestDriver.swift */; };
+		069E5B4D285A0CE30005A6DC /* ValueInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A93E952811A01C00B88C87 /* ValueInteractionWorker.swift */; };
+		069E5B4E285A0CE60005A6DC /* WaitInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0640A54626BC20E2004F2E5E /* WaitInteractionWorker.swift */; };
+		069E5B4F285A0CF20005A6DC /* SlideActionInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BC5A67262F0A2A0022ACF9 /* SlideActionInteractionWorker.swift */; };
+		069E5B50285A0CF20005A6DC /* ScrollActionInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F14067264968AB00136813 /* ScrollActionInteractionWorker.swift */; };
+		069E5B51285A0CF20005A6DC /* LongPressInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E5B32285A073E0005A6DC /* LongPressInteractionWorker.swift */; };
+		069E5B52285A0CF20005A6DC /* TapActionInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CCE2D72628683C001A4955 /* TapActionInteractionWorker.swift */; };
+		069E5B53285A0CF20005A6DC /* PickerWheelInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6110DB6826FDC40D00387BBE /* PickerWheelInteractionWorker.swift */; };
+		069E5B54285A0CF20005A6DC /* KeyboardInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BC5ACD262F10120022ACF9 /* KeyboardInteractionWorker.swift */; };
+		069E5B55285A0CF60005A6DC /* TextAssertInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CCE2B526284B31001A4955 /* TextAssertInteractionWorker.swift */; };
+		069E5B56285A0CF60005A6DC /* ToggleAssertInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A8C4FB26EF8889000337CD /* ToggleAssertInteractionWorker.swift */; };
+		069E5B57285A0CF60005A6DC /* VisibilityAssertInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068CA3B72613ABFD00EAC0EE /* VisibilityAssertInteractionWorker.swift */; };
+		069E5B58285A0CF60005A6DC /* EnabledAssertInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BC59C6262E06ED0022ACF9 /* EnabledAssertInteractionWorker.swift */; };
+		069E5B59285A0CF60005A6DC /* SelectedAssertInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F13FEE26458B1900136813 /* SelectedAssertInteractionWorker.swift */; };
+		069E5B5A285A0CFA0005A6DC /* TextElementInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CA8A6426318E340032D788 /* TextElementInteractionWorker.swift */; };
+		069E5B5B285A0CFA0005A6DC /* AccessibilityElementInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068CA2B8260E29CB00EAC0EE /* AccessibilityElementInteractionWorker.swift */; };
 		06A93E9328119EE400B88C87 /* ValueInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A93E9228119EE400B88C87 /* ValueInteraction.swift */; };
 		06A93EAA2811A15200B88C87 /* UITestingTool+Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A93EA92811A15200B88C87 /* UITestingTool+Value.swift */; };
 		06BC59C1262E06600022ACF9 /* EnabledAssertInteraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BC59C0262E06600022ACF9 /* EnabledAssertInteraction.swift */; };
@@ -144,6 +161,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		069E5B41285A0BE60005A6DC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -202,6 +228,7 @@
 		069E5B2E285A07200005A6DC /* PickerWheelInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerWheelInteractionWorker.swift; sourceTree = "<group>"; };
 		069E5B2F285A07200005A6DC /* LongPressInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongPressInteractionWorker.swift; sourceTree = "<group>"; };
 		069E5B32285A073E0005A6DC /* LongPressInteractionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressInteractionWorker.swift; sourceTree = "<group>"; };
+		069E5B43285A0BE60005A6DC /* libXCUITestDriver.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libXCUITestDriver.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		06A93E9228119EE400B88C87 /* ValueInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueInteraction.swift; sourceTree = "<group>"; };
 		06A93E952811A01C00B88C87 /* ValueInteractionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueInteractionWorker.swift; sourceTree = "<group>"; };
 		06A93EA92811A15200B88C87 /* UITestingTool+Value.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITestingTool+Value.swift"; sourceTree = "<group>"; };
@@ -286,6 +313,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		069E5B40285A0BE60005A6DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -365,6 +399,7 @@
 				068CA224260E07F600EAC0EE /* DemoAppUIKit_UITests.xctest */,
 				0672249D2617518E00D15B24 /* libUITestingConfiguration.a */,
 				069E5B1B2859F2350005A6DC /* UITestingConfiguration_UnitTests.xctest */,
+				069E5B43285A0BE60005A6DC /* libXCUITestDriver.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -750,6 +785,23 @@
 			productReference = 069E5B1B2859F2350005A6DC /* UITestingConfiguration_UnitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		069E5B42285A0BE60005A6DC /* XCUITestDriver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 069E5B47285A0BE60005A6DC /* Build configuration list for PBXNativeTarget "XCUITestDriver" */;
+			buildPhases = (
+				069E5B3F285A0BE60005A6DC /* Sources */,
+				069E5B40285A0BE60005A6DC /* Frameworks */,
+				069E5B41285A0BE60005A6DC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XCUITestDriver;
+			productName = XCUITestDriver;
+			productReference = 069E5B43285A0BE60005A6DC /* libXCUITestDriver.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -777,6 +829,9 @@
 						CreatedOnToolsVersion = 13.2.1;
 						LastSwiftMigration = 1320;
 					};
+					069E5B42285A0BE60005A6DC = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
 				};
 			};
 			buildConfigurationList = 068CA171260DEDF600EAC0EE /* Build configuration list for PBXProject "UITestingTool" */;
@@ -793,6 +848,7 @@
 			projectRoot = "";
 			targets = (
 				068CA175260DEDF600EAC0EE /* UITestingTool */,
+				069E5B42285A0BE60005A6DC /* XCUITestDriver */,
 				068CA209260E075100EAC0EE /* DemoAppUIKit */,
 				068CA223260E07F600EAC0EE /* DemoAppUIKit_UITests */,
 				0672249C2617518E00D15B24 /* UITestingConfiguration */,
@@ -932,6 +988,30 @@
 			files = (
 				069E5B27285A05F60005A6DC /* ConfigurationDecoderTests.swift in Sources */,
 				069E5B28285A05F60005A6DC /* ConfigurationEncoderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		069E5B3F285A0BE60005A6DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				069E5B52285A0CF20005A6DC /* TapActionInteractionWorker.swift in Sources */,
+				069E5B53285A0CF20005A6DC /* PickerWheelInteractionWorker.swift in Sources */,
+				069E5B55285A0CF60005A6DC /* TextAssertInteractionWorker.swift in Sources */,
+				069E5B4D285A0CE30005A6DC /* ValueInteractionWorker.swift in Sources */,
+				069E5B5B285A0CFA0005A6DC /* AccessibilityElementInteractionWorker.swift in Sources */,
+				069E5B58285A0CF60005A6DC /* EnabledAssertInteractionWorker.swift in Sources */,
+				069E5B4E285A0CE60005A6DC /* WaitInteractionWorker.swift in Sources */,
+				069E5B4C285A0CDB0005A6DC /* XCUITestDriver.swift in Sources */,
+				069E5B51285A0CF20005A6DC /* LongPressInteractionWorker.swift in Sources */,
+				069E5B50285A0CF20005A6DC /* ScrollActionInteractionWorker.swift in Sources */,
+				069E5B56285A0CF60005A6DC /* ToggleAssertInteractionWorker.swift in Sources */,
+				069E5B54285A0CF20005A6DC /* KeyboardInteractionWorker.swift in Sources */,
+				069E5B57285A0CF60005A6DC /* VisibilityAssertInteractionWorker.swift in Sources */,
+				069E5B4B285A0C1E0005A6DC /* Assert.swift in Sources */,
+				069E5B4F285A0CF20005A6DC /* SlideActionInteractionWorker.swift in Sources */,
+				069E5B5A285A0CFA0005A6DC /* TextElementInteractionWorker.swift in Sources */,
+				069E5B59285A0CF60005A6DC /* SelectedAssertInteractionWorker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1285,6 +1365,36 @@
 			};
 			name = Release;
 		};
+		069E5B48285A0BE60005A6DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		069E5B49285A0BE60005A6DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1338,6 +1448,15 @@
 			buildConfigurations = (
 				069E5B232859F2360005A6DC /* Debug */,
 				069E5B242859F2360005A6DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		069E5B47285A0BE60005A6DC /* Build configuration list for PBXNativeTarget "XCUITestDriver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				069E5B48285A0BE60005A6DC /* Debug */,
+				069E5B49285A0BE60005A6DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
