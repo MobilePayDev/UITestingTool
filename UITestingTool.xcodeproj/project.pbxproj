@@ -359,9 +359,8 @@
 			children = (
 				068CA178260DEDF600EAC0EE /* UITestingTool */,
 				0672249E2617518E00D15B24 /* UITestingConfiguration */,
-				068CA20B260E075100EAC0EE /* DemoAppUIKit */,
-				068CA225260E07F600EAC0EE /* DemoAppUIKit_UITests */,
 				069E5B1C2859F2360005A6DC /* UITestingConfiguration_UnitTests */,
+				069E5B62285A10990005A6DC /* Demo */,
 				068CA177260DEDF600EAC0EE /* Products */,
 				068CA23F260E0B5A00EAC0EE /* Frameworks */,
 			);
@@ -561,6 +560,15 @@
 				069E5B26285A05F60005A6DC /* ConfigurationEncoderTests.swift */,
 			);
 			path = UITestingConfiguration_UnitTests;
+			sourceTree = "<group>";
+		};
+		069E5B62285A10990005A6DC /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				068CA20B260E075100EAC0EE /* DemoAppUIKit */,
+				068CA225260E07F600EAC0EE /* DemoAppUIKit_UITests */,
+			);
+			name = Demo;
 			sourceTree = "<group>";
 		};
 		06A93E9128118CB200B88C87 /* Value */ = {
