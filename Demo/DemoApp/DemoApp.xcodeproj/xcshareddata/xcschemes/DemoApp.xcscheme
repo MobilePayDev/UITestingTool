@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "068CA209260E075100EAC0EE"
-               BuildableName = "DemoAppUIKit.app"
-               BlueprintName = "DemoAppUIKit"
-               ReferencedContainer = "container:UITestingTool.xcodeproj">
+               BlueprintIdentifier = "069E5B6B285A133E0005A6DC"
+               BuildableName = "DemoApp.app"
+               BlueprintName = "DemoApp"
+               ReferencedContainer = "container:DemoApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "069E5B96285A15070005A6DC"
+               BuildableName = "DemoApp_UITests_XCUITest.xctest"
+               BlueprintName = "DemoApp_UITests_XCUITest"
+               ReferencedContainer = "container:DemoApp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -44,10 +54,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "068CA209260E075100EAC0EE"
-            BuildableName = "DemoAppUIKit.app"
-            BlueprintName = "DemoAppUIKit"
-            ReferencedContainer = "container:UITestingTool.xcodeproj">
+            BlueprintIdentifier = "069E5B6B285A133E0005A6DC"
+            BuildableName = "DemoApp.app"
+            BlueprintName = "DemoApp"
+            ReferencedContainer = "container:DemoApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -61,10 +71,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "068CA209260E075100EAC0EE"
-            BuildableName = "DemoAppUIKit.app"
-            BlueprintName = "DemoAppUIKit"
-            ReferencedContainer = "container:UITestingTool.xcodeproj">
+            BlueprintIdentifier = "069E5B6B285A133E0005A6DC"
+            BuildableName = "DemoApp.app"
+            BlueprintName = "DemoApp"
+            ReferencedContainer = "container:DemoApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
