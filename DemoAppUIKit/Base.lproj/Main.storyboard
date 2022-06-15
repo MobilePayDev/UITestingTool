@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a6q-5L-rve">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DemoAppUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Demo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDX-jI-a94">
+                                <rect key="frame" x="184" y="437.5" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perfect solution" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lB0-qJ-YZs">
+                                <rect key="frame" x="147" y="478.5" width="120" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="goe-Vt-6Ry">
+                                <rect key="frame" x="8" y="112" width="398" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="v_scroll_button"/>
+                                <state key="normal" title="Vertical scrolling"/>
+                                <connections>
+                                    <segue destination="anS-49-bsa" kind="show" id="s7Q-Ql-mYp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jb6-zM-E6F">
+                                <rect key="frame" x="16" y="150" width="382" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="h_scroll_button"/>
+                                <state key="normal" title="Horizontal scrolling"/>
+                                <connections>
+                                    <segue destination="kyg-dV-BRG" kind="show" id="3aD-dN-UHc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MDX-jI-a94" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6dw-xN-QNI"/>
+                            <constraint firstItem="Jb6-zM-E6F" firstAttribute="top" secondItem="goe-Vt-6Ry" secondAttribute="bottom" constant="8" symbolic="YES" id="7Sd-rd-DN3"/>
+                            <constraint firstItem="MDX-jI-a94" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9q3-cT-xdy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jb6-zM-E6F" secondAttribute="trailing" constant="16" id="ZPT-MN-9Np"/>
+                            <constraint firstItem="Jb6-zM-E6F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bfa-xW-laq"/>
+                            <constraint firstItem="lB0-qJ-YZs" firstAttribute="top" secondItem="MDX-jI-a94" secondAttribute="bottom" constant="20" id="dSt-SO-kUz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="goe-Vt-6Ry" secondAttribute="trailing" constant="8" id="ghP-6X-ut0"/>
+                            <constraint firstItem="goe-Vt-6Ry" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="hkr-fz-BXR"/>
+                            <constraint firstItem="goe-Vt-6Ry" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="lTf-SJ-KAR"/>
+                            <constraint firstItem="lB0-qJ-YZs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="z6L-t7-wat"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7eH-IJ-YgC"/>
+                    <connections>
+                        <outlet property="demoLabel" destination="MDX-jI-a94" id="T7W-5v-eZs"/>
+                        <outlet property="labelA" destination="lB0-qJ-YZs" id="g9n-33-u2j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="921.73913043478262" y="99.776785714285708"/>
+        </scene>
+        <!--Horizontal Scrolling Controller-->
+        <scene sceneID="lDp-Pr-FE8">
+            <objects>
+                <viewController id="kyg-dV-BRG" customClass="HorizontalScrollingController" customModule="DemoAppUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6nG-6a-S1S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6El-Kc-83u"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SOG-EW-fYJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C70-0j-iOO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2178" y="180"/>
+        </scene>
+        <!--Vertical Scrolling Controller-->
+        <scene sceneID="ZsJ-NQ-85g">
+            <objects>
+                <viewController id="anS-49-bsa" customClass="VerticalScrollingController" customModule="DemoAppUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ACT-VO-QHS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="hjr-vm-jxR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Sog-po-JJM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OPg-Gb-nPV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2184" y="-512"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rKb-zV-6lc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="a6q-5L-rve" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qfk-IY-mqU">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="APz-UZ-f8J"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t6E-of-V5f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11.594202898550726" y="99.776785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
