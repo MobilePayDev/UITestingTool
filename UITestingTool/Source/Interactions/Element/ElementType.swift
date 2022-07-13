@@ -15,7 +15,7 @@ public enum ElementType {
     case cell
     case segmentedControl
     case `switch`
-    case navigationBarTitle
+    case navigationBar
     case datePicker
     case alert
 }

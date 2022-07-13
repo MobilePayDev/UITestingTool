@@ -46,20 +46,15 @@ final class AccessibilityElementInteractionWorker: InteractionElementWorker {
             query = app.segmentedControls.matching(identifier: accessibilityInteraction.accessibilityId)
         case .switch:
             query = app.switches.matching(identifier: accessibilityInteraction.accessibilityId)
-        case .navigationBarTitle:
-            query = app.navigationBars.staticTexts.matching(identifier: accessibilityInteraction.accessibilityId)
+        case .navigationBar:
+            query = app.navigationBars.matching(identifier: accessibilityInteraction.accessibilityId)
         case .datePicker:
             query = app.datePickers.matching(identifier: accessibilityInteraction.accessibilityId)
         case .alert:
             query = app.alerts.matching(identifier: accessibilityInteraction.accessibilityId)
         }
 
-        let element: XCUIElement
-        if let index = accessibilityInteraction.index {
-            element = query.element(boundBy: index)
-        } else {
-            element = query.firstMatch
-        }
+        let element: XCUIElement = query.firstMatch
 
         Assert.notNil(element, "No element with accessibility ID: \"\(accessibilityInteraction.accessibilityId)\"", in: interaction.context)
         return element
