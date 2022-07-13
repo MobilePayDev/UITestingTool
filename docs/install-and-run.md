@@ -10,16 +10,16 @@ You can add UITestingTool to Xcode projects in three ways: using [SPM](#swift-pa
 
 ### Swift Package Manager Installation
 
-[ ] TODO: Add support and instructions for SPM
+- [ ] TODO: Add support and instructions for SPM
 
 ### Carthage Installation
 
-[ ] TODO: Add support and instructions for SPM
+- [ ] TODO: Add support and instructions for SPM
 
 ### GitHub Installation
 
-[ ] TODO: Add support and instructions for SPM
+- [ ] TODO: Add support and instructions for SPM
 
 ## Set Up and run your first test
 
-[ ] TODO: Add instructions for frist test
+- [ ] TODO: Add instructions for frist test
