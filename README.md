@@ -7,6 +7,9 @@ UI tests abstraction tool which born from strugle of migrating many UI tests fro
 - [Features](#features)
 - [Limitations](#limitations)
 - [Getting Started](#getting-started)
+- [Example](#example)
+- [For Contributors](#for-contributors)
+- [License](#license)
 
 ## Current Status
 
@@ -35,6 +38,14 @@ Currently UITestingTool not reached major version and breaking API changes are e
 
 [Install and Run](https://github.com/MobilePayDev/UITestingTool/tree/main/docs/install-and-run.md)
 
+## Example
+
+- [ ] TODO: Add simple usage example
+
 ## For Contributors
 
-TBD
+- [ ] TODO: Add instruction for contributors
+
+## License
+
+UITestingTool is released under the MIT license. [See LICENSE](https://github.com/MobilePayDev/UITestingTool/tree/main/LICENSE) for details.
