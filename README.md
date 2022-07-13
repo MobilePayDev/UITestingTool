@@ -40,7 +40,45 @@ Currently UITestingTool not reached major version and breaking API changes are e
 
 ## Example
 
-- [ ] TODO: Add simple usage example
+Example of login with email and password test. 
+This test is agnostic to which framework is executing it and don't have any references to any depenencies from test itself.
+
+```swift
+final class LoginUITests: TestCase {
+    
+    func test_login_existing_user_WHEN_email_provided_AND_password_provided_THEN_login_success_AND_home_screen_visible() {
+        AppConfiguration(self)
+            <~ LoginSceneConfiguration()
+            <~ Inject()
+        
+        UITest(self)
+            .label(accessibilityId: "login_view")
+            .assert(visibility: .sufficientlyVisible)
+            
+        UITest(self)
+            .textField(accessibilityId: "email_input_field")
+            .assert(visibility: .sufficientlyVisible)
+            .tap() // Focus on email text field
+            .typeText("test@test.com")
+            .typeReturn() // Jump to password field
+            
+        UITest(self)
+            .textField(accessibilityId: "password_input_field")
+            .assert(visibility: .sufficientlyVisible)
+            .typeText("password123!")
+            
+        UITest(self)
+            .button(accessibilityId: "login_button")
+            .assert(visibility: .sufficientlyVisible)
+            .tap()
+            
+        UITest(self)
+            .view(accessibilityId: "home_view")
+            .wait(for: .exist, timeout: .seconds(5)) // Extra timeout to accomodate for request time and animations
+            .assert(visibility: .sufficientlyVisible)
+    }
+}
+```
 
 ## For Contributors
 
