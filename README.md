@@ -33,7 +33,7 @@ Currently UITestingTool not reached major version and breaking API changes are e
 
 ## Getting Started
 
-TBD
+[Install and Run](https://github.com/MobilePayDev/UITestingTool/tree/main/docs/install-and-run.md)
 
 ## For Contributors
 
