@@ -13,7 +13,7 @@ UI tests abstraction tool which born from strugle of migrating many UI tests fro
 
 ## Current Status
 
-Currently UITestingTool not reached major version and breaking API changes are expected.
+Currently UITestingTool not reached major version and breaking API changes could be expected.
 
 ## Features
 
