@@ -21,7 +21,13 @@ struct TextAssertInteractionWorker: InteractionWorker {
         }
 
         let elementText: String?
-        if !element.label.isEmpty {
+        if element.elementType == .webView {
+            let label = element.staticTexts.firstMatch
+            elementText = label.value as? String
+        } else if element.elementType == .navigationBar {
+            let label = element.staticTexts.firstMatch
+            elementText = label.label
+        } else if !element.label.isEmpty {
             elementText = element.label
         } else if let text = element.value as? String {
             elementText = text
