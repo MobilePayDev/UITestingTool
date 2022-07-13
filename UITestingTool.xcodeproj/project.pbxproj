@@ -162,6 +162,7 @@
 		069E5B32285A073E0005A6DC /* LongPressInteractionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressInteractionWorker.swift; sourceTree = "<group>"; };
 		069E5B43285A0BE60005A6DC /* libXCUITestDriver.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libXCUITestDriver.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		069E5B88285A13CD0005A6DC /* DemoApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DemoApp.xcodeproj; path = Demo/DemoApp/DemoApp.xcodeproj; sourceTree = "<group>"; };
+		069E5BCB285B78BC0005A6DC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		06A93E9228119EE400B88C87 /* ValueInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueInteraction.swift; sourceTree = "<group>"; };
 		06A93E952811A01C00B88C87 /* ValueInteractionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueInteractionWorker.swift; sourceTree = "<group>"; };
 		06A93EA92811A15200B88C87 /* UITestingTool+Value.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITestingTool+Value.swift"; sourceTree = "<group>"; };
@@ -262,6 +263,7 @@
 		068CA16D260DEDF600EAC0EE = {
 			isa = PBXGroup;
 			children = (
+				069E5BCB285B78BC0005A6DC /* README.md */,
 				068CA178260DEDF600EAC0EE /* UITestingTool */,
 				0672249E2617518E00D15B24 /* UITestingConfiguration */,
 				069E5B1C2859F2360005A6DC /* UITestingConfiguration_UnitTests */,
