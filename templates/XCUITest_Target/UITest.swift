@@ -1,0 +1,14 @@
+import XCTest
+import UITestingTool
+
+final class UITest: UITestingTool {
+
+    init(_ testCase: TestCase) {
+        let driver = XCUITestDriver(
+            app: testCase.app,
+            interactionElementWorkers: [],
+            interactionWorkers: []
+        )
+        super.init(driver: driver)
+    }
+}
