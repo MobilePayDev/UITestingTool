@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1320"
+   LastUpgradeVersion = "1340"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0672249C2617518E00D15B24"
-               BuildableName = "libUITestingConfiguration.a"
+               BlueprintIdentifier = "06A0215E28818A0800E0F91D"
+               BuildableName = "UITestingConfiguration.framework"
                BlueprintName = "UITestingConfiguration"
                ReferencedContainer = "container:UITestingTool.xcodeproj">
             </BuildableReference>
@@ -28,16 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "06C6E1B4269EEEA500BE27D2"
-               BuildableName = "UITestingConfigurationTests.xctest"
-               BlueprintName = "UITestingConfigurationTests"
-               ReferencedContainer = "container:UITestingTool.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -60,8 +50,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0672249C2617518E00D15B24"
-            BuildableName = "libUITestingConfiguration.a"
+            BlueprintIdentifier = "06A0215E28818A0800E0F91D"
+            BuildableName = "UITestingConfiguration.framework"
             BlueprintName = "UITestingConfiguration"
             ReferencedContainer = "container:UITestingTool.xcodeproj">
          </BuildableReference>

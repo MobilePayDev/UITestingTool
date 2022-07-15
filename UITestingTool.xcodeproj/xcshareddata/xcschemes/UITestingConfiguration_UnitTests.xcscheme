@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1320"
+   LastUpgradeVersion = "1340"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -16,7 +16,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "069E5B1A2859F2350005A6DC"
+               BlueprintIdentifier = "06A0216F28818AFE00E0F91D"
                BuildableName = "UITestingConfiguration_UnitTests.xctest"
                BlueprintName = "UITestingConfiguration_UnitTests"
                ReferencedContainer = "container:UITestingTool.xcodeproj">

@@ -15,19 +15,20 @@
 		069E5B7C285A133F0005A6DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 069E5B7A285A133F0005A6DC /* LaunchScreen.storyboard */; };
 		069E5B86285A13B30005A6DC /* HorizontalScrollingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E5B84285A13B30005A6DC /* HorizontalScrollingController.swift */; };
 		069E5B87285A13B30005A6DC /* VerticalScrollingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E5B85285A13B30005A6DC /* VerticalScrollingController.swift */; };
-		069E5B90285A13EC0005A6DC /* libUITestingConfiguration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 069E5B8F285A13EC0005A6DC /* libUITestingConfiguration.a */; };
 		069E5BA5285A156B0005A6DC /* UITesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E5BA2285A156B0005A6DC /* UITesting.swift */; };
 		069E5BA6285A156B0005A6DC /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E5BA3285A156B0005A6DC /* AppConfiguration.swift */; };
 		069E5BA7285A156B0005A6DC /* TestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E5BA4285A156B0005A6DC /* TestCase.swift */; };
-		069E5BA9285A15DA0005A6DC /* libUITestingConfiguration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 069E5BA8285A15DA0005A6DC /* libUITestingConfiguration.a */; };
-		069E5BAB285A15DA0005A6DC /* libUITestingTool.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 069E5BAA285A15DA0005A6DC /* libUITestingTool.a */; };
-		069E5BAD285A15DA0005A6DC /* libXCUITestDriver.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 069E5BAC285A15DA0005A6DC /* libXCUITestDriver.a */; };
 		069E5BAF285A160C0005A6DC /* VisibilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E5BAE285A160C0005A6DC /* VisibilityTests.swift */; };
 		069E5BB4285A16310005A6DC /* UITestingConfiguration+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E5BB0285A161D0005A6DC /* UITestingConfiguration+Default.swift */; };
 		069E5BB5285A16370005A6DC /* AccessibilityConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E5BB2285A161D0005A6DC /* AccessibilityConfiguration.swift */; };
 		069E5BB6285A16370005A6DC /* AccessibilityConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E5BB2285A161D0005A6DC /* AccessibilityConfiguration.swift */; };
 		069E5BB7285A163B0005A6DC /* AccessibilityConfigurationWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E5BB3285A161D0005A6DC /* AccessibilityConfigurationWorker.swift */; };
 		069E5BBC285A16BB0005A6DC /* ScrollingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069E5BBB285A16BB0005A6DC /* ScrollingTests.swift */; };
+		06A0217D28818B7F00E0F91D /* UITestingConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A0217C28818B7F00E0F91D /* UITestingConfiguration.framework */; };
+		06A0217E28818B7F00E0F91D /* UITestingConfiguration.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 06A0217C28818B7F00E0F91D /* UITestingConfiguration.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		06A0218128818BFB00E0F91D /* UITestingConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A0218028818BFB00E0F91D /* UITestingConfiguration.framework */; };
+		06A0218328818BFB00E0F91D /* UITestingTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A0218228818BFB00E0F91D /* UITestingTool.framework */; };
+		06A0218528818BFB00E0F91D /* XCUITestDriver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A0218428818BFB00E0F91D /* XCUITestDriver.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,20 @@
 			remoteInfo = DemoApp;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		06A0217F28818B7F00E0F91D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				06A0217E28818B7F00E0F91D /* UITestingConfiguration.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		069E5B6C285A133E0005A6DC /* DemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +79,10 @@
 		069E5BB2285A161D0005A6DC /* AccessibilityConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityConfiguration.swift; sourceTree = "<group>"; };
 		069E5BB3285A161D0005A6DC /* AccessibilityConfigurationWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityConfigurationWorker.swift; sourceTree = "<group>"; };
 		069E5BBB285A16BB0005A6DC /* ScrollingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingTests.swift; sourceTree = "<group>"; };
+		06A0217C28818B7F00E0F91D /* UITestingConfiguration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UITestingConfiguration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06A0218028818BFB00E0F91D /* UITestingConfiguration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UITestingConfiguration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06A0218228818BFB00E0F91D /* UITestingTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UITestingTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		06A0218428818BFB00E0F91D /* XCUITestDriver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = XCUITestDriver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				069E5B90285A13EC0005A6DC /* libUITestingConfiguration.a in Frameworks */,
+				06A0217D28818B7F00E0F91D /* UITestingConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,9 +98,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				069E5BAB285A15DA0005A6DC /* libUITestingTool.a in Frameworks */,
-				069E5BA9285A15DA0005A6DC /* libUITestingConfiguration.a in Frameworks */,
-				069E5BAD285A15DA0005A6DC /* libXCUITestDriver.a in Frameworks */,
+				06A0218528818BFB00E0F91D /* XCUITestDriver.framework in Frameworks */,
+				06A0218128818BFB00E0F91D /* UITestingConfiguration.framework in Frameworks */,
+				06A0218328818BFB00E0F91D /* UITestingTool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +155,10 @@
 		069E5B8E285A13EC0005A6DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				06A0218028818BFB00E0F91D /* UITestingConfiguration.framework */,
+				06A0218228818BFB00E0F91D /* UITestingTool.framework */,
+				06A0218428818BFB00E0F91D /* XCUITestDriver.framework */,
+				06A0217C28818B7F00E0F91D /* UITestingConfiguration.framework */,
 				069E5BA8285A15DA0005A6DC /* libUITestingConfiguration.a */,
 				069E5BAA285A15DA0005A6DC /* libUITestingTool.a */,
 				069E5BAC285A15DA0005A6DC /* libXCUITestDriver.a */,
@@ -191,6 +214,7 @@
 				069E5B68285A133E0005A6DC /* Sources */,
 				069E5B69285A133E0005A6DC /* Frameworks */,
 				069E5B6A285A133E0005A6DC /* Resources */,
+				06A0217F28818B7F00E0F91D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

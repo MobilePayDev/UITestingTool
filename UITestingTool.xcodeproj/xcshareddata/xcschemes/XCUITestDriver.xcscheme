@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1320"
+   LastUpgradeVersion = "1340"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "069E5B42285A0BE60005A6DC"
-               BuildableName = "libXCUITestDriver.a"
+               BlueprintIdentifier = "06A0213D2881892000E0F91D"
+               BuildableName = "XCUITestDriver.framework"
                BlueprintName = "XCUITestDriver"
                ReferencedContainer = "container:UITestingTool.xcodeproj">
             </BuildableReference>
@@ -50,8 +50,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "069E5B42285A0BE60005A6DC"
-            BuildableName = "libXCUITestDriver.a"
+            BlueprintIdentifier = "06A0213D2881892000E0F91D"
+            BuildableName = "XCUITestDriver.framework"
             BlueprintName = "XCUITestDriver"
             ReferencedContainer = "container:UITestingTool.xcodeproj">
          </BuildableReference>
