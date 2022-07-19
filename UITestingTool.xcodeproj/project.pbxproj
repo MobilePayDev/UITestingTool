@@ -100,6 +100,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0607158828868A3B000256D5 /* docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = docs; sourceTree = "<group>"; };
 		0640A52926BC1C62004F2E5E /* WaitInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitInteraction.swift; sourceTree = "<group>"; };
 		0640A53026BC1D30004F2E5E /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		0640A53726BC1D82004F2E5E /* UITestingTool+WaitInteraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITestingTool+WaitInteraction.swift"; sourceTree = "<group>"; };
@@ -233,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				069E5BCB285B78BC0005A6DC /* README.md */,
+				0607158828868A3B000256D5 /* docs */,
 				068CA178260DEDF600EAC0EE /* UITestingTool */,
 				0672249E2617518E00D15B24 /* UITestingConfiguration */,
 				069E5B1C2859F2360005A6DC /* UITestingConfiguration_UnitTests */,
