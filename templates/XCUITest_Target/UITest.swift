@@ -1,5 +1,6 @@
 import XCTest
 import UITestingTool
+import XCUITestDriver
 
 final class UITest: UITestingTool {
 
