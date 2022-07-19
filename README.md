@@ -33,7 +33,7 @@ Currently UITestingTool not reached major version and breaking API changes could
 
 - No access of elements by index. It is intentional to simplify different implementation of execution frameworks.
 - No access of elements by text. It is intentional to simplify different implementation of execution frameworks.
-- Configuration executed only at the begining of a test run meaning there is no way to interact with app code (mocking, etc) during execution of a test. All mocking and setup should be done before a test is excuted.
+- Configuration executed only at the begining of a test run meaning there is no way to interact with app code (mocking, etc) during execution of a test. All mocking and setup should be done before a test is excuted (setUp stage).
 
 ## Getting Started
 
