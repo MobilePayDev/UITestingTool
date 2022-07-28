@@ -26,8 +26,9 @@ Currently UITestingTool not reached major version and breaking API changes could
     - Enables to use different implementation for default interactions 
 - [x] Extend with custom interactions
     - Enables creating custom interactions that looks and feels like they are provided by tool itself
-- [x] White-box mocking
+- [x] \*White-box mocking (with limitations)
     - Ability to create mocks that are executed on app process even if tests are runned in black-box fashion via XCUITest
+    - Limitation: Mocking executed (via configurations) once per test in setUp stage
 
 ## Limitations
 
