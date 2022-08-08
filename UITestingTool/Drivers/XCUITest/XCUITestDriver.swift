@@ -3,7 +3,7 @@ import XCTest
 
 public final class XCUITestDriver: Driver {
 
-    private(set) var element: XCUIElement!
+    public private(set) var element: XCUIElement!
 
     let app: XCUIApplication
     private let interactionElementWorkers: [(Interaction.Type, InteractionElementWorker.Type)]
