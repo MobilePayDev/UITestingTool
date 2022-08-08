@@ -8,6 +8,7 @@ UI tests abstraction tool which born from strugle of migrating many UI tests fro
 - [Limitations](#limitations)
 - [Getting Started](#getting-started)
 - [Example](#example)
+- [Override default behaviour](#override-default-behaviour)
 - [For Contributors](#for-contributors)
 - [License](#license)
 
