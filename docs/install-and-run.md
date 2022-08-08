@@ -56,14 +56,14 @@ You need physical copy of UITestingTool source. There are several ways how you c
 
 Drag in UITestingTool project to your Xcode project or workspace. After doing that you will have visibility of needed targets.
 
-#### Step 3: Add dependencies to the project
+#### Step 3: Link dependencies to targets
 
-- Drag `UITestingConfiguration` to your project and link to:
+- Link `UITestingConfiguration` to:
     - `YourApp` target
     - `YourApp_UITests_XCUITest` target
-- Drag `UITestingTool` to your project and link to:
+- Link `UITestingTool` to:
     - `YourApp_UITests_XCUITest` target
-- Drag `XCUITestDriver` to your project and link to:
+- Link `XCUITestDriver` to:
     - `YourApp_UITests_XCUITest` target
     
 In the end you should have:
