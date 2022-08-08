@@ -45,7 +45,32 @@ In the end you should have:
 
 ### GitHub Installation
 
-- [ ] TODO: Add support and instructions for SPM
+#### Step 1: Download project
+
+You need physical copy of UITestingTool source. There are several ways how you can get it, choose one based on your needs.
+- (Git submodule) Add as git submodule to YourApp git repo
+- (Git subtree) Add as git subtree to YourApp git repo
+- (Manual) Download copy from GitHub
+
+#### Step 2: Add UITestingTool as subproject
+
+Drag in UITestingTool project to your Xcode project or workspace. After doing that you will have visibility of needed targets.
+
+#### Step 3: Add dependencies to the project
+
+- Drag `UITestingConfiguration` to your project and link to:
+    - `YourApp` target
+    - `YourApp_UITests_XCUITest` target
+- Drag `UITestingTool` to your project and link to:
+    - `YourApp_UITests_XCUITest` target
+- Drag `XCUITestDriver` to your project and link to:
+    - `YourApp_UITests_XCUITest` target
+    
+In the end you should have:
+
+<img src="images/app_target_dependencies.png" width="500">
+
+<img src="images/xcuitest_target_dependencies.png" width="500">
 
 ## Set Up and run your first test
 
