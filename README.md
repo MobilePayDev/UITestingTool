@@ -82,6 +82,12 @@ final class LoginUITests: TestCase {
 }
 ```
 
+## Override default behaviour
+
+If default implementation do not suit your needs you can provide custom mapping and implementation how interactions should behave.
+
+[Override default behaviour](https://github.com/MobilePayDev/UITestingTool/tree/main/docs/override-default-behaviour.md)
+
 ## For Contributors
 
 - [ ] TODO: Add instruction for contributors

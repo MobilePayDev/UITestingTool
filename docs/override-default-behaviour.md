@@ -1,3 +1,13 @@
+
+# Override default behaviour
+
+There are 2 steps to override default behaviour:
+1. Provide custom interaction and worker mapping
+2. Implement custom worker
+
+Example of setting custom mapping for text assertion.
+
+```swift
 import UITestingTool
 import XCUITestDriver
 import XCTest
@@ -12,6 +22,14 @@ final class UITesting: UITestingTool {
         super.init(driver: driver)
     }
 }
+```
+
+Example of custom text assertion implementation:
+
+```swift
+import UITestingTool
+import XCUITestDriver
+import XCTest
 
 struct CustomTextAssertInteractionWorker: InteractionWorker {
     private let element: XCUIElement!
@@ -55,3 +73,4 @@ struct CustomTextAssertInteractionWorker: InteractionWorker {
         }
     }
 }
+```
