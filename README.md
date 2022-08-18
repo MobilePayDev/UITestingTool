@@ -1,7 +1,7 @@
 
 # UITestingTool
 
-UI tests abstraction tool which born from strugle of migrating many UI tests from deprecated 3rd party framework when there was no other way just to rewrite all tests.
+Abstraction layer and tooling to write UI tests which enables to execute same tests on different frameworks such as XCTest and KIF.
 
 - [Current Status](#current-status)
 - [Features](#features)
