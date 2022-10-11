@@ -26,6 +26,7 @@
 		069ED3C828F5A15C00777D49 /* SelectedAssertInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3B528F5A15C00777D49 /* SelectedAssertInteractionWorker.swift */; };
 		069ED3C928F5A15C00777D49 /* Assert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3B628F5A15C00777D49 /* Assert.swift */; };
 		069ED3CA28F5A15C00777D49 /* ValueInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3B828F5A15C00777D49 /* ValueInteractionWorker.swift */; };
+		069ED3CD28F5A1D700777D49 /* UITestingTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A0210C288186D900E0F91D /* UITestingTool.framework */; };
 		06A0210F288186D900E0F91D /* UITestingTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 06A0210E288186D900E0F91D /* UITestingTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		06A02113288186E900E0F91D /* UITestingTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068CA179260DEDF600EAC0EE /* UITestingTool.swift */; };
 		06A02114288186F000E0F91D /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068CA260260E184C00EAC0EE /* Driver.swift */; };
@@ -101,6 +102,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = 069E5B97285A15070005A6DC;
 			remoteInfo = DemoApp_UITests_XCUITest;
+		};
+		069ED3CB28F5A1D000777D49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 068CA16E260DEDF600EAC0EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06A0210B288186D900E0F91D;
+			remoteInfo = UITestingTool;
 		};
 		06A021572881897C00E0F91D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -211,6 +219,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				069ED3CD28F5A1D700777D49 /* UITestingTool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,6 +630,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				069ED3CC28F5A1D000777D49 /* PBXTargetDependency */,
 			);
 			name = KIFDriver;
 			productName = KIFDriver;
@@ -921,6 +931,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		069ED3CC28F5A1D000777D49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06A0210B288186D900E0F91D /* UITestingTool */;
+			targetProxy = 069ED3CB28F5A1D000777D49 /* PBXContainerItemProxy */;
+		};
 		06A021582881897C00E0F91D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 06A0210B288186D900E0F91D /* UITestingTool */;
