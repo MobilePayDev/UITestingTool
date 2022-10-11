@@ -6,7 +6,7 @@ struct ToggleAssertInteractionWorker: InteractionWorker {
     private let element: XCUIElement!
 
     init(driver: Driver) {
-        self.element = (driver as? XCUITestDriver)?.element
+        element = (driver as? XCUITestDriver)?.element
     }
 
     func execute(_ interaction: Interaction) {

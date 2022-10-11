@@ -6,7 +6,7 @@ final class AccessibilityElementInteractionWorker: InteractionElementWorker {
     private let app: XCUIApplication!
 
     init(driver: Driver) {
-        self.app = (driver as? XCUITestDriver)?.app
+        app = (driver as? XCUITestDriver)?.app
     }
 
     func element(for interaction: Interaction) -> Any? {

@@ -7,7 +7,7 @@ struct ScrollActionInteractionWorker: InteractionWorker {
     private let driver: Driver
 
     init(driver: Driver) {
-        self.element = (driver as? XCUITestDriver)?.element
+        element = (driver as? XCUITestDriver)?.element
         self.driver = driver
     }
 
