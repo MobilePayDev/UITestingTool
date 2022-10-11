@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		069ED35B28F593BA00777D49 /* KIFDriver.h in Headers */ = {isa = PBXBuildFile; fileRef = 069ED35A28F593BA00777D49 /* KIFDriver.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		06A0210F288186D900E0F91D /* UITestingTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 06A0210E288186D900E0F91D /* UITestingTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		06A02113288186E900E0F91D /* UITestingTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068CA179260DEDF600EAC0EE /* UITestingTool.swift */; };
 		06A02114288186F000E0F91D /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068CA260260E184C00EAC0EE /* Driver.swift */; };
@@ -130,6 +131,8 @@
 		069E5B32285A073E0005A6DC /* LongPressInteractionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressInteractionWorker.swift; sourceTree = "<group>"; };
 		069E5B88285A13CD0005A6DC /* DemoApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DemoApp.xcodeproj; path = Demo/DemoApp/DemoApp.xcodeproj; sourceTree = "<group>"; };
 		069E5BCB285B78BC0005A6DC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		069ED35828F593BA00777D49 /* KIFDriver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KIFDriver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		069ED35A28F593BA00777D49 /* KIFDriver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIFDriver.h; sourceTree = "<group>"; };
 		06A0210C288186D900E0F91D /* UITestingTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UITestingTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		06A0210E288186D900E0F91D /* UITestingTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITestingTool.h; sourceTree = "<group>"; };
 		06A0213E2881892000E0F91D /* XCUITestDriver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XCUITestDriver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,6 +171,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		069ED35528F593BA00777D49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		06A02109288186D900E0F91D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -253,6 +263,7 @@
 				06A0213E2881892000E0F91D /* XCUITestDriver.framework */,
 				06A0215F28818A0800E0F91D /* UITestingConfiguration.framework */,
 				06A0217028818AFE00E0F91D /* UITestingConfiguration_UnitTests.xctest */,
+				069ED35828F593BA00777D49 /* KIFDriver.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -339,6 +350,7 @@
 			children = (
 				068CA260260E184C00EAC0EE /* Driver.swift */,
 				068CA25E260E181200EAC0EE /* XCUITest */,
+				069ED36428F5943700777D49 /* KIF */,
 			);
 			path = Drivers;
 			sourceTree = "<group>";
@@ -419,6 +431,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		069ED36428F5943700777D49 /* KIF */ = {
+			isa = PBXGroup;
+			children = (
+				069ED35A28F593BA00777D49 /* KIFDriver.h */,
+			);
+			path = KIF;
+			sourceTree = "<group>";
+		};
 		06A93E9128118CB200B88C87 /* Value */ = {
 			isa = PBXGroup;
 			children = (
@@ -460,6 +480,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		069ED35328F593BA00777D49 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				069ED35B28F593BA00777D49 /* KIFDriver.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		06A02107288186D900E0F91D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -487,6 +515,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		069ED35728F593BA00777D49 /* KIFDriver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 069ED36028F593BA00777D49 /* Build configuration list for PBXNativeTarget "KIFDriver" */;
+			buildPhases = (
+				069ED35328F593BA00777D49 /* Headers */,
+				069ED35428F593BA00777D49 /* Sources */,
+				069ED35528F593BA00777D49 /* Frameworks */,
+				069ED35628F593BA00777D49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KIFDriver;
+			productName = KIFDriver;
+			productReference = 069ED35828F593BA00777D49 /* KIFDriver.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		06A0210B288186D900E0F91D /* UITestingTool */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06A02110288186D900E0F91D /* Build configuration list for PBXNativeTarget "UITestingTool" */;
@@ -569,6 +615,9 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					069ED35728F593BA00777D49 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
 					06A0210B288186D900E0F91D = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -604,6 +653,7 @@
 			targets = (
 				06A0210B288186D900E0F91D /* UITestingTool */,
 				06A0213D2881892000E0F91D /* XCUITestDriver */,
+				069ED35728F593BA00777D49 /* KIFDriver */,
 				06A0215E28818A0800E0F91D /* UITestingConfiguration */,
 				06A0216F28818AFE00E0F91D /* UITestingConfiguration_UnitTests */,
 			);
@@ -628,6 +678,13 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		069ED35628F593BA00777D49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		06A0210A288186D900E0F91D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -659,6 +716,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		069ED35428F593BA00777D49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		06A02108288186D900E0F91D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -870,6 +934,66 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		069ED35C28F593BA00777D49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MobilePay.KIFDriver;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		069ED35D28F593BA00777D49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MobilePay.KIFDriver;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -1095,6 +1219,15 @@
 			buildConfigurations = (
 				068CA17B260DEDF600EAC0EE /* Debug */,
 				068CA17C260DEDF600EAC0EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		069ED36028F593BA00777D49 /* Build configuration list for PBXNativeTarget "KIFDriver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				069ED35C28F593BA00777D49 /* Debug */,
+				069ED35D28F593BA00777D49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
