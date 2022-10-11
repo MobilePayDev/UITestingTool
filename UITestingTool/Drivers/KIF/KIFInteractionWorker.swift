@@ -1,5 +1,4 @@
 import UITestingTool
-import KIF
 
 class KIFInteractionWorker: NSObject, InteractionWorker, KIFTestActorDelegate { // swiftlint:disable:this final_class
     let element: KIFUIViewTestActor!
@@ -12,6 +11,8 @@ class KIFInteractionWorker: NSObject, InteractionWorker, KIFTestActorDelegate { 
 
     func execute(_ interaction: Interaction) {}
 
+    // MARK: - KIFTestActorDelegate
+    
     func fail(with exception: NSException!, stopTest stop: Bool) {}
 
     func fail(withExceptions exceptions: [Any]!, stopTest stop: Bool) {

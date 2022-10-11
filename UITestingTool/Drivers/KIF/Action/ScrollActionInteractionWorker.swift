@@ -1,5 +1,5 @@
 import UITestingTool
-import KIF
+import UIKit
 
 final class ScrollActionInteractionWorker: KIFInteractionWorker {
     override func execute(_ interaction: Interaction) {

@@ -32,3 +32,14 @@ final class TextAssertInteractionWorker: KIFInteractionWorker {
         element.expect(toContainText: interaction.text)
     }
 }
+
+private extension UINavigationBar {
+    func titleLabel() -> UILabel? {
+        for subview in subviews {
+            for subSubview in subview.subviews where subSubview is UILabel {
+                return subSubview as? UILabel
+            }
+        }
+        return nil
+    }
+}

@@ -27,6 +27,11 @@
 		069ED3C928F5A15C00777D49 /* Assert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3B628F5A15C00777D49 /* Assert.swift */; };
 		069ED3CA28F5A15C00777D49 /* ValueInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3B828F5A15C00777D49 /* ValueInteractionWorker.swift */; };
 		069ED3CD28F5A1D700777D49 /* UITestingTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A0210C288186D900E0F91D /* UITestingTool.framework */; };
+		069ED3CF28F5A25600777D49 /* KIFDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3CE28F5A25600777D49 /* KIFDependencies.swift */; };
+		069ED3D228F5FED700777D49 /* KIFUIViewTestActorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3D128F5FED700777D49 /* KIFUIViewTestActorInterface.swift */; };
+		069ED3D428F5FF0300777D49 /* KIFUIViewTestActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3D328F5FF0300777D49 /* KIFUIViewTestActor.swift */; };
+		069ED3D628F5FF3E00777D49 /* KIFUIViewExtensionInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3D528F5FF3E00777D49 /* KIFUIViewExtensionInterface.swift */; };
+		069ED3D928F6005900777D49 /* KIFUIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3D728F5FF5500777D49 /* KIFUIViewExtension.swift */; };
 		06A0210F288186D900E0F91D /* UITestingTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 06A0210E288186D900E0F91D /* UITestingTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		06A02113288186E900E0F91D /* UITestingTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068CA179260DEDF600EAC0EE /* UITestingTool.swift */; };
 		06A02114288186F000E0F91D /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068CA260260E184C00EAC0EE /* Driver.swift */; };
@@ -177,6 +182,11 @@
 		069ED3B528F5A15C00777D49 /* SelectedAssertInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedAssertInteractionWorker.swift; sourceTree = "<group>"; };
 		069ED3B628F5A15C00777D49 /* Assert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assert.swift; sourceTree = "<group>"; };
 		069ED3B828F5A15C00777D49 /* ValueInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueInteractionWorker.swift; sourceTree = "<group>"; };
+		069ED3CE28F5A25600777D49 /* KIFDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIFDependencies.swift; sourceTree = "<group>"; };
+		069ED3D128F5FED700777D49 /* KIFUIViewTestActorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIFUIViewTestActorInterface.swift; sourceTree = "<group>"; };
+		069ED3D328F5FF0300777D49 /* KIFUIViewTestActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIFUIViewTestActor.swift; sourceTree = "<group>"; };
+		069ED3D528F5FF3E00777D49 /* KIFUIViewExtensionInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIFUIViewExtensionInterface.swift; sourceTree = "<group>"; };
+		069ED3D728F5FF5500777D49 /* KIFUIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIFUIViewExtension.swift; sourceTree = "<group>"; };
 		06A0210C288186D900E0F91D /* UITestingTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UITestingTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		06A0210E288186D900E0F91D /* UITestingTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITestingTool.h; sourceTree = "<group>"; };
 		06A0213E2881892000E0F91D /* XCUITestDriver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XCUITestDriver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -479,6 +489,7 @@
 		069ED36428F5943700777D49 /* KIF */ = {
 			isa = PBXGroup;
 			children = (
+				069ED3D028F5FEBF00777D49 /* Dependencies */,
 				069ED35A28F593BA00777D49 /* KIFDriver.h */,
 				069ED3AF28F5A15C00777D49 /* KIFDriver.swift */,
 				069ED3B628F5A15C00777D49 /* Assert.swift */,
@@ -540,6 +551,18 @@
 				069ED3B828F5A15C00777D49 /* ValueInteractionWorker.swift */,
 			);
 			path = Value;
+			sourceTree = "<group>";
+		};
+		069ED3D028F5FEBF00777D49 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				069ED3CE28F5A25600777D49 /* KIFDependencies.swift */,
+				069ED3D128F5FED700777D49 /* KIFUIViewTestActorInterface.swift */,
+				069ED3D328F5FF0300777D49 /* KIFUIViewTestActor.swift */,
+				069ED3D528F5FF3E00777D49 /* KIFUIViewExtensionInterface.swift */,
+				069ED3D728F5FF5500777D49 /* KIFUIViewExtension.swift */,
+			);
+			path = Dependencies;
 			sourceTree = "<group>";
 		};
 		06A93E9128118CB200B88C87 /* Value */ = {
@@ -832,17 +855,22 @@
 				069ED3C528F5A15C00777D49 /* EnabledAssertInteractionWorker.swift in Sources */,
 				069ED3C828F5A15C00777D49 /* SelectedAssertInteractionWorker.swift in Sources */,
 				069ED3CA28F5A15C00777D49 /* ValueInteractionWorker.swift in Sources */,
+				069ED3D228F5FED700777D49 /* KIFUIViewTestActorInterface.swift in Sources */,
 				069ED3C928F5A15C00777D49 /* Assert.swift in Sources */,
 				069ED3C728F5A15C00777D49 /* ToggleAssertInteractionWorker.swift in Sources */,
 				069ED3C128F5A15C00777D49 /* WaitInteractionWorker.swift in Sources */,
 				069ED3BB28F5A15C00777D49 /* TapActionInteractionWorker.swift in Sources */,
 				069ED3BE28F5A15C00777D49 /* LongPressInteractionWorker.swift in Sources */,
+				069ED3D928F6005900777D49 /* KIFUIViewExtension.swift in Sources */,
 				069ED3BA28F5A15C00777D49 /* PickerWheelInteractionWorker.swift in Sources */,
 				069ED3BC28F5A15C00777D49 /* SlideActionInteractionWorker.swift in Sources */,
 				069ED3C228F5A15C00777D49 /* KIFInteractionElementWorker.swift in Sources */,
 				069ED3C328F5A15C00777D49 /* KIFDriver.swift in Sources */,
 				069ED3C428F5A15C00777D49 /* VisibilityAssertInteractionWorker.swift in Sources */,
+				069ED3CF28F5A25600777D49 /* KIFDependencies.swift in Sources */,
+				069ED3D628F5FF3E00777D49 /* KIFUIViewExtensionInterface.swift in Sources */,
 				069ED3B928F5A15C00777D49 /* AccessibilityElementInteractionWorker.swift in Sources */,
+				069ED3D428F5FF0300777D49 /* KIFUIViewTestActor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

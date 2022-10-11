@@ -1,5 +1,4 @@
 import UITestingTool
-import KIF
 
 final class KeyboardInteractionWorker: KIFInteractionWorker {
 

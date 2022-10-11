@@ -1,6 +1,5 @@
 import UITestingTool
 import XCTest
-import KIF
 
 final class WaitInteractionWorker: KIFInteractionWorker {
 

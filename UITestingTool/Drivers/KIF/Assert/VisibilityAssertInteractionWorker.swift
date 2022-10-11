@@ -1,5 +1,4 @@
 import UITestingTool
-import KIF
 
 final class VisibilityAssertInteractionWorker: KIFInteractionWorker {
     override func execute(_ interaction: Interaction) {
