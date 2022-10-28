@@ -8,7 +8,7 @@ final class KIFUIViewTestActor: KIFUIViewTestActorInterface {
         actor.view
     }
     
-    init?(inFile file: String, atLine line: NSInteger, delegate: KIFTestActorDelegate) {
+    init?(inFile file: String, atLine line: NSInteger, delegate: KIFTestActorDelegateInterface) {
         self.actor = KIFDependencies.configuration.viewTestActor.init(inFile: file, atLine: line, delegate: delegate)!
     }
     

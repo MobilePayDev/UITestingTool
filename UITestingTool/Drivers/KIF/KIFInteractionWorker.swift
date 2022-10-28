@@ -1,6 +1,6 @@
 import UITestingTool
 
-class KIFInteractionWorker: NSObject, InteractionWorker, KIFTestActorDelegate { // swiftlint:disable:this final_class
+class KIFInteractionWorker: NSObject, InteractionWorker, KIFTestActorDelegateInterface { // swiftlint:disable:this final_class
     let element: KIFUIViewTestActor!
     let driver: Driver
 

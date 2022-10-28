@@ -1,6 +1,6 @@
 import UIKit
 
-public protocol KIFTestActorDelegate {
+public protocol KIFTestActorDelegateInterface: AnyObject {
     func fail(with exception: NSException!, stopTest stop: Bool)
     func fail(withExceptions exceptions: [Any]!, stopTest stop: Bool)
 }
@@ -10,7 +10,7 @@ public protocol KIFUIViewTestActorInterface {
     var view: UIView! { get }
     
     // + (instancetype)actorInFile:(NSString *)file atLine:(NSInteger)line delegate:(id<KIFTestActorDelegate>)delegate
-    init?(inFile file: String, atLine line: NSInteger, delegate: KIFTestActorDelegate)
+    init?(inFile file: String, atLine line: NSInteger, delegate: KIFTestActorDelegateInterface)
     
     // - (instancetype)usingIdentifier:(NSString *)accessibilityIdentifier
     @discardableResult func usingIdentifier(_ accessibilityIdentifier: String) -> Self
