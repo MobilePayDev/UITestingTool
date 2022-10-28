@@ -7,7 +7,7 @@ public final class KIFDriver: Driver {
     private let interactionElementWorkers: [(Interaction.Type, InteractionElementWorker.Type)]
     private let interactionWorkers: [(Interaction.Type, InteractionWorker.Type)]
 
-    public init(interactionElementWorkers: [(Interaction.Type, InteractionElementWorker.Type)], interactionWorkers: [(Interaction.Type, InteractionWorker.Type)]) {
+    public init(interactionElementWorkers: [(Interaction.Type, InteractionElementWorker.Type)] = [], interactionWorkers: [(Interaction.Type, InteractionWorker.Type)] = []) {
         let defaultInteractionElementWorkers: [(Interaction.Type, InteractionElementWorker.Type)] = [
             (AccessibilityElementInteraction.self, AccessibilityElementInteractionWorker.self)
         ]
