@@ -1,13 +1,13 @@
 import UITestingTool
 
-final class KIFDriver: Driver {
+public final class KIFDriver: Driver {
 
     private(set) var element: KIFUIViewTestActor!
 
     private let interactionElementWorkers: [(Interaction.Type, InteractionElementWorker.Type)]
     private let interactionWorkers: [(Interaction.Type, InteractionWorker.Type)]
 
-    init(interactionElementWorkers: [(Interaction.Type, InteractionElementWorker.Type)], interactionWorkers: [(Interaction.Type, InteractionWorker.Type)]) {
+    public init(interactionElementWorkers: [(Interaction.Type, InteractionElementWorker.Type)], interactionWorkers: [(Interaction.Type, InteractionWorker.Type)]) {
         let defaultInteractionElementWorkers: [(Interaction.Type, InteractionElementWorker.Type)] = [
             (AccessibilityElementInteraction.self, AccessibilityElementInteractionWorker.self)
         ]
@@ -30,7 +30,7 @@ final class KIFDriver: Driver {
         self.interactionWorkers = interactionWorkers + defaultInteractionWorkers
     }
 
-    func execute(_ interaction: Interaction) {
+    public func execute(_ interaction: Interaction) {
         switch interaction {
         case is ElementInteraction:
             element = element(for: interaction)
