@@ -1,4 +1,5 @@
 import UITestingTool
+import KIFDriver
 //import KIF
 //@testable import MY_APP
 
@@ -8,6 +9,7 @@ class TestCase: KIFTestCase { // swiftlint:disable:this final_class
         try super.setUpWithError()
 
         continueAfterFailure = false
+        KIFDependencies.inject()
         clearAppState()
     }
     
