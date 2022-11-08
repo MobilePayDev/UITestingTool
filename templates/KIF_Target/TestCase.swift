@@ -1,6 +1,6 @@
 import UITestingTool
 import KIFDriver
-//import KIF
+import KIF
 //@testable import MY_APP
 
 class TestCase: KIFTestCase { // swiftlint:disable:this final_class
