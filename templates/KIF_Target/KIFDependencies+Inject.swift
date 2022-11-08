@@ -1,6 +1,6 @@
 import KIFDriver
 import UIKit
-//import KIF
+import KIF
 
 extension KIFDependencies {
     
@@ -24,7 +24,7 @@ private final class KIFUIViewTestActorBridge: NSObject, KIFUIViewTestActorInterf
     init?(inFile file: String, atLine line: NSInteger, delegate: KIFTestActorDelegateInterface) {
         super.init()
         self.delegate = delegate
-        self.actor = KIFUIViewTestActor(inFile: file, atLine: line, delegate: self)!
+        self.actor = KIFUIViewTestActor(inFile: file, atLine: line, delegate: self)! // swiftlint:disable:this force_unwrapping
     }
     
     @discardableResult func usingIdentifier(_ accessibilityIdentifier: String) -> Self {
