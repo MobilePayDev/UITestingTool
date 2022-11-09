@@ -5,7 +5,8 @@ This document shows you how to install UITestingTool and then how to set up and 
 test.
 
 - [Install](#install)
-    + [Step 0: Create "UI Testing Bundle" target](#step-0--create--ui-testing-bundle--target)
+    + [Step 0 (XCUITest): Create "UI Testing Bundle" target](#step-0--xcuitest---create--ui-testing-bundle--target)
+    + [Step 0 (KIF): Create "Unit Testing Bundle" target](#step-0--kif---create--unit-testing-bundle--target)
   * [Swift Package Manager Installation](#swift-package-manager-installation)
   * [Carthage Installation](#carthage-installation)
     + [Step 1: Install dependencies via Carthage](#step-1--install-dependencies-via-carthage)
@@ -25,13 +26,21 @@ test.
 
 You can add UITestingTool to Xcode projects in three ways: using [SPM](#swift-package-manager-installation), [Carthage](#carthage-installation) or [Manually](#github-installation) through the Xcode Project.
 
-#### Step 0: Create "UI Testing Bundle" target
+#### Step 0 (XCUITest): Create "UI Testing Bundle" target
 
-Creating UI tests excution target is needed for all instalation variants
+Creating UI tests excution target
 
 <img src="images/template_ui_testing_bundle.png" width="500">
 
 <img src="images/new_target_for_xcuitest.png" width="500">
+
+#### Step 0 (KIF): Create "Unit Testing Bundle" target
+
+Creating unit tests excution target. **KIF runs via Unit tests target!**
+
+<img src="images/template_unit_testing_bundle.png" width="500">
+
+<img src="images/new_target_for_kif.png" width="500">
 
 ### Swift Package Manager Installation
 
