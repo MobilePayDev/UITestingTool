@@ -7,6 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		069ED35B28F593BA00777D49 /* KIFDriver.h in Headers */ = {isa = PBXBuildFile; fileRef = 069ED35A28F593BA00777D49 /* KIFDriver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		069ED3B928F5A15C00777D49 /* AccessibilityElementInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3A328F5A15C00777D49 /* AccessibilityElementInteractionWorker.swift */; };
+		069ED3BA28F5A15C00777D49 /* PickerWheelInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3A528F5A15C00777D49 /* PickerWheelInteractionWorker.swift */; };
+		069ED3BB28F5A15C00777D49 /* TapActionInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3A628F5A15C00777D49 /* TapActionInteractionWorker.swift */; };
+		069ED3BC28F5A15C00777D49 /* SlideActionInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3A728F5A15C00777D49 /* SlideActionInteractionWorker.swift */; };
+		069ED3BD28F5A15C00777D49 /* ScrollActionInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3A828F5A15C00777D49 /* ScrollActionInteractionWorker.swift */; };
+		069ED3BE28F5A15C00777D49 /* LongPressInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3A928F5A15C00777D49 /* LongPressInteractionWorker.swift */; };
+		069ED3BF28F5A15C00777D49 /* KeyboardInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3AA28F5A15C00777D49 /* KeyboardInteractionWorker.swift */; };
+		069ED3C028F5A15C00777D49 /* KIFInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3AB28F5A15C00777D49 /* KIFInteractionWorker.swift */; };
+		069ED3C128F5A15C00777D49 /* WaitInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3AD28F5A15C00777D49 /* WaitInteractionWorker.swift */; };
+		069ED3C228F5A15C00777D49 /* KIFInteractionElementWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3AE28F5A15C00777D49 /* KIFInteractionElementWorker.swift */; };
+		069ED3C328F5A15C00777D49 /* KIFDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3AF28F5A15C00777D49 /* KIFDriver.swift */; };
+		069ED3C428F5A15C00777D49 /* VisibilityAssertInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3B128F5A15C00777D49 /* VisibilityAssertInteractionWorker.swift */; };
+		069ED3C528F5A15C00777D49 /* EnabledAssertInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3B228F5A15C00777D49 /* EnabledAssertInteractionWorker.swift */; };
+		069ED3C628F5A15C00777D49 /* TextAssertInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3B328F5A15C00777D49 /* TextAssertInteractionWorker.swift */; };
+		069ED3C728F5A15C00777D49 /* ToggleAssertInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3B428F5A15C00777D49 /* ToggleAssertInteractionWorker.swift */; };
+		069ED3C828F5A15C00777D49 /* SelectedAssertInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3B528F5A15C00777D49 /* SelectedAssertInteractionWorker.swift */; };
+		069ED3C928F5A15C00777D49 /* Assert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3B628F5A15C00777D49 /* Assert.swift */; };
+		069ED3CA28F5A15C00777D49 /* ValueInteractionWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3B828F5A15C00777D49 /* ValueInteractionWorker.swift */; };
+		069ED3CD28F5A1D700777D49 /* UITestingTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A0210C288186D900E0F91D /* UITestingTool.framework */; };
+		069ED3CF28F5A25600777D49 /* KIFDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3CE28F5A25600777D49 /* KIFDependencies.swift */; };
+		069ED3D228F5FED700777D49 /* KIFUIViewTestActorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3D128F5FED700777D49 /* KIFUIViewTestActorInterface.swift */; };
+		069ED3D428F5FF0300777D49 /* KIFUIViewTestActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3D328F5FF0300777D49 /* KIFUIViewTestActor.swift */; };
+		069ED3D628F5FF3E00777D49 /* KIFUIViewExtensionInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3D528F5FF3E00777D49 /* KIFUIViewExtensionInterface.swift */; };
+		069ED3D928F6005900777D49 /* KIFUIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069ED3D728F5FF5500777D49 /* KIFUIViewExtension.swift */; };
 		06A0210F288186D900E0F91D /* UITestingTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 06A0210E288186D900E0F91D /* UITestingTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		06A02113288186E900E0F91D /* UITestingTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068CA179260DEDF600EAC0EE /* UITestingTool.swift */; };
 		06A02114288186F000E0F91D /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068CA260260E184C00EAC0EE /* Driver.swift */; };
@@ -83,6 +108,13 @@
 			remoteGlobalIDString = 069E5B97285A15070005A6DC;
 			remoteInfo = DemoApp_UITests_XCUITest;
 		};
+		069ED3CB28F5A1D000777D49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 068CA16E260DEDF600EAC0EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06A0210B288186D900E0F91D;
+			remoteInfo = UITestingTool;
+		};
 		06A021572881897C00E0F91D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 068CA16E260DEDF600EAC0EE /* Project object */;
@@ -130,6 +162,31 @@
 		069E5B32285A073E0005A6DC /* LongPressInteractionWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressInteractionWorker.swift; sourceTree = "<group>"; };
 		069E5B88285A13CD0005A6DC /* DemoApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DemoApp.xcodeproj; path = Demo/DemoApp/DemoApp.xcodeproj; sourceTree = "<group>"; };
 		069E5BCB285B78BC0005A6DC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		069ED35828F593BA00777D49 /* KIFDriver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KIFDriver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		069ED35A28F593BA00777D49 /* KIFDriver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIFDriver.h; sourceTree = "<group>"; };
+		069ED3A328F5A15C00777D49 /* AccessibilityElementInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibilityElementInteractionWorker.swift; sourceTree = "<group>"; };
+		069ED3A528F5A15C00777D49 /* PickerWheelInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerWheelInteractionWorker.swift; sourceTree = "<group>"; };
+		069ED3A628F5A15C00777D49 /* TapActionInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TapActionInteractionWorker.swift; sourceTree = "<group>"; };
+		069ED3A728F5A15C00777D49 /* SlideActionInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideActionInteractionWorker.swift; sourceTree = "<group>"; };
+		069ED3A828F5A15C00777D49 /* ScrollActionInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollActionInteractionWorker.swift; sourceTree = "<group>"; };
+		069ED3A928F5A15C00777D49 /* LongPressInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongPressInteractionWorker.swift; sourceTree = "<group>"; };
+		069ED3AA28F5A15C00777D49 /* KeyboardInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardInteractionWorker.swift; sourceTree = "<group>"; };
+		069ED3AB28F5A15C00777D49 /* KIFInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KIFInteractionWorker.swift; sourceTree = "<group>"; };
+		069ED3AD28F5A15C00777D49 /* WaitInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitInteractionWorker.swift; sourceTree = "<group>"; };
+		069ED3AE28F5A15C00777D49 /* KIFInteractionElementWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KIFInteractionElementWorker.swift; sourceTree = "<group>"; };
+		069ED3AF28F5A15C00777D49 /* KIFDriver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KIFDriver.swift; sourceTree = "<group>"; };
+		069ED3B128F5A15C00777D49 /* VisibilityAssertInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisibilityAssertInteractionWorker.swift; sourceTree = "<group>"; };
+		069ED3B228F5A15C00777D49 /* EnabledAssertInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnabledAssertInteractionWorker.swift; sourceTree = "<group>"; };
+		069ED3B328F5A15C00777D49 /* TextAssertInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextAssertInteractionWorker.swift; sourceTree = "<group>"; };
+		069ED3B428F5A15C00777D49 /* ToggleAssertInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleAssertInteractionWorker.swift; sourceTree = "<group>"; };
+		069ED3B528F5A15C00777D49 /* SelectedAssertInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedAssertInteractionWorker.swift; sourceTree = "<group>"; };
+		069ED3B628F5A15C00777D49 /* Assert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assert.swift; sourceTree = "<group>"; };
+		069ED3B828F5A15C00777D49 /* ValueInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValueInteractionWorker.swift; sourceTree = "<group>"; };
+		069ED3CE28F5A25600777D49 /* KIFDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIFDependencies.swift; sourceTree = "<group>"; };
+		069ED3D128F5FED700777D49 /* KIFUIViewTestActorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIFUIViewTestActorInterface.swift; sourceTree = "<group>"; };
+		069ED3D328F5FF0300777D49 /* KIFUIViewTestActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIFUIViewTestActor.swift; sourceTree = "<group>"; };
+		069ED3D528F5FF3E00777D49 /* KIFUIViewExtensionInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIFUIViewExtensionInterface.swift; sourceTree = "<group>"; };
+		069ED3D728F5FF5500777D49 /* KIFUIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIFUIViewExtension.swift; sourceTree = "<group>"; };
 		06A0210C288186D900E0F91D /* UITestingTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UITestingTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		06A0210E288186D900E0F91D /* UITestingTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UITestingTool.h; sourceTree = "<group>"; };
 		06A0213E2881892000E0F91D /* XCUITestDriver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XCUITestDriver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,6 +225,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		069ED35528F593BA00777D49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				069ED3CD28F5A1D700777D49 /* UITestingTool.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		06A02109288186D900E0F91D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -253,6 +318,7 @@
 				06A0213E2881892000E0F91D /* XCUITestDriver.framework */,
 				06A0215F28818A0800E0F91D /* UITestingConfiguration.framework */,
 				06A0217028818AFE00E0F91D /* UITestingConfiguration_UnitTests.xctest */,
+				069ED35828F593BA00777D49 /* KIFDriver.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -339,6 +405,7 @@
 			children = (
 				068CA260260E184C00EAC0EE /* Driver.swift */,
 				068CA25E260E181200EAC0EE /* XCUITest */,
+				069ED36428F5943700777D49 /* KIF */,
 			);
 			path = Drivers;
 			sourceTree = "<group>";
@@ -419,6 +486,85 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		069ED36428F5943700777D49 /* KIF */ = {
+			isa = PBXGroup;
+			children = (
+				069ED3D028F5FEBF00777D49 /* Dependencies */,
+				069ED35A28F593BA00777D49 /* KIFDriver.h */,
+				069ED3AF28F5A15C00777D49 /* KIFDriver.swift */,
+				069ED3B628F5A15C00777D49 /* Assert.swift */,
+				069ED3AB28F5A15C00777D49 /* KIFInteractionWorker.swift */,
+				069ED3A428F5A15C00777D49 /* Action */,
+				069ED3B028F5A15C00777D49 /* Assert */,
+				069ED3A228F5A15C00777D49 /* Element */,
+				069ED3B728F5A15C00777D49 /* Value */,
+				069ED3AC28F5A15C00777D49 /* Wait */,
+			);
+			path = KIF;
+			sourceTree = "<group>";
+		};
+		069ED3A228F5A15C00777D49 /* Element */ = {
+			isa = PBXGroup;
+			children = (
+				069ED3AE28F5A15C00777D49 /* KIFInteractionElementWorker.swift */,
+				069ED3A328F5A15C00777D49 /* AccessibilityElementInteractionWorker.swift */,
+			);
+			path = Element;
+			sourceTree = "<group>";
+		};
+		069ED3A428F5A15C00777D49 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				069ED3A528F5A15C00777D49 /* PickerWheelInteractionWorker.swift */,
+				069ED3A628F5A15C00777D49 /* TapActionInteractionWorker.swift */,
+				069ED3A728F5A15C00777D49 /* SlideActionInteractionWorker.swift */,
+				069ED3A828F5A15C00777D49 /* ScrollActionInteractionWorker.swift */,
+				069ED3A928F5A15C00777D49 /* LongPressInteractionWorker.swift */,
+				069ED3AA28F5A15C00777D49 /* KeyboardInteractionWorker.swift */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		069ED3AC28F5A15C00777D49 /* Wait */ = {
+			isa = PBXGroup;
+			children = (
+				069ED3AD28F5A15C00777D49 /* WaitInteractionWorker.swift */,
+			);
+			path = Wait;
+			sourceTree = "<group>";
+		};
+		069ED3B028F5A15C00777D49 /* Assert */ = {
+			isa = PBXGroup;
+			children = (
+				069ED3B128F5A15C00777D49 /* VisibilityAssertInteractionWorker.swift */,
+				069ED3B228F5A15C00777D49 /* EnabledAssertInteractionWorker.swift */,
+				069ED3B328F5A15C00777D49 /* TextAssertInteractionWorker.swift */,
+				069ED3B428F5A15C00777D49 /* ToggleAssertInteractionWorker.swift */,
+				069ED3B528F5A15C00777D49 /* SelectedAssertInteractionWorker.swift */,
+			);
+			path = Assert;
+			sourceTree = "<group>";
+		};
+		069ED3B728F5A15C00777D49 /* Value */ = {
+			isa = PBXGroup;
+			children = (
+				069ED3B828F5A15C00777D49 /* ValueInteractionWorker.swift */,
+			);
+			path = Value;
+			sourceTree = "<group>";
+		};
+		069ED3D028F5FEBF00777D49 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				069ED3CE28F5A25600777D49 /* KIFDependencies.swift */,
+				069ED3D128F5FED700777D49 /* KIFUIViewTestActorInterface.swift */,
+				069ED3D328F5FF0300777D49 /* KIFUIViewTestActor.swift */,
+				069ED3D528F5FF3E00777D49 /* KIFUIViewExtensionInterface.swift */,
+				069ED3D728F5FF5500777D49 /* KIFUIViewExtension.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
 		06A93E9128118CB200B88C87 /* Value */ = {
 			isa = PBXGroup;
 			children = (
@@ -460,6 +606,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		069ED35328F593BA00777D49 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				069ED35B28F593BA00777D49 /* KIFDriver.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		06A02107288186D900E0F91D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -487,6 +641,25 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		069ED35728F593BA00777D49 /* KIFDriver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 069ED36028F593BA00777D49 /* Build configuration list for PBXNativeTarget "KIFDriver" */;
+			buildPhases = (
+				069ED35328F593BA00777D49 /* Headers */,
+				069ED35428F593BA00777D49 /* Sources */,
+				069ED35528F593BA00777D49 /* Frameworks */,
+				069ED35628F593BA00777D49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				069ED3CC28F5A1D000777D49 /* PBXTargetDependency */,
+			);
+			name = KIFDriver;
+			productName = KIFDriver;
+			productReference = 069ED35828F593BA00777D49 /* KIFDriver.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		06A0210B288186D900E0F91D /* UITestingTool */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 06A02110288186D900E0F91D /* Build configuration list for PBXNativeTarget "UITestingTool" */;
@@ -569,6 +742,10 @@
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					069ED35728F593BA00777D49 = {
+						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
+					};
 					06A0210B288186D900E0F91D = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
@@ -604,6 +781,7 @@
 			targets = (
 				06A0210B288186D900E0F91D /* UITestingTool */,
 				06A0213D2881892000E0F91D /* XCUITestDriver */,
+				069ED35728F593BA00777D49 /* KIFDriver */,
 				06A0215E28818A0800E0F91D /* UITestingConfiguration */,
 				06A0216F28818AFE00E0F91D /* UITestingConfiguration_UnitTests */,
 			);
@@ -628,6 +806,13 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		069ED35628F593BA00777D49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		06A0210A288186D900E0F91D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -659,6 +844,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		069ED35428F593BA00777D49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				069ED3BF28F5A15C00777D49 /* KeyboardInteractionWorker.swift in Sources */,
+				069ED3C028F5A15C00777D49 /* KIFInteractionWorker.swift in Sources */,
+				069ED3BD28F5A15C00777D49 /* ScrollActionInteractionWorker.swift in Sources */,
+				069ED3C628F5A15C00777D49 /* TextAssertInteractionWorker.swift in Sources */,
+				069ED3C528F5A15C00777D49 /* EnabledAssertInteractionWorker.swift in Sources */,
+				069ED3C828F5A15C00777D49 /* SelectedAssertInteractionWorker.swift in Sources */,
+				069ED3CA28F5A15C00777D49 /* ValueInteractionWorker.swift in Sources */,
+				069ED3D228F5FED700777D49 /* KIFUIViewTestActorInterface.swift in Sources */,
+				069ED3C928F5A15C00777D49 /* Assert.swift in Sources */,
+				069ED3C728F5A15C00777D49 /* ToggleAssertInteractionWorker.swift in Sources */,
+				069ED3C128F5A15C00777D49 /* WaitInteractionWorker.swift in Sources */,
+				069ED3BB28F5A15C00777D49 /* TapActionInteractionWorker.swift in Sources */,
+				069ED3BE28F5A15C00777D49 /* LongPressInteractionWorker.swift in Sources */,
+				069ED3D928F6005900777D49 /* KIFUIViewExtension.swift in Sources */,
+				069ED3BA28F5A15C00777D49 /* PickerWheelInteractionWorker.swift in Sources */,
+				069ED3BC28F5A15C00777D49 /* SlideActionInteractionWorker.swift in Sources */,
+				069ED3C228F5A15C00777D49 /* KIFInteractionElementWorker.swift in Sources */,
+				069ED3C328F5A15C00777D49 /* KIFDriver.swift in Sources */,
+				069ED3C428F5A15C00777D49 /* VisibilityAssertInteractionWorker.swift in Sources */,
+				069ED3CF28F5A25600777D49 /* KIFDependencies.swift in Sources */,
+				069ED3D628F5FF3E00777D49 /* KIFUIViewExtensionInterface.swift in Sources */,
+				069ED3B928F5A15C00777D49 /* AccessibilityElementInteractionWorker.swift in Sources */,
+				069ED3D428F5FF0300777D49 /* KIFUIViewTestActor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		06A02108288186D900E0F91D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -744,6 +959,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		069ED3CC28F5A1D000777D49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06A0210B288186D900E0F91D /* UITestingTool */;
+			targetProxy = 069ED3CB28F5A1D000777D49 /* PBXContainerItemProxy */;
+		};
 		06A021582881897C00E0F91D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 06A0210B288186D900E0F91D /* UITestingTool */;
@@ -870,6 +1090,71 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		069ED35C28F593BA00777D49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MobilePay.KIFDriver;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		069ED35D28F593BA00777D49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MobilePay.KIFDriver;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -1095,6 +1380,15 @@
 			buildConfigurations = (
 				068CA17B260DEDF600EAC0EE /* Debug */,
 				068CA17C260DEDF600EAC0EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		069ED36028F593BA00777D49 /* Build configuration list for PBXNativeTarget "KIFDriver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				069ED35C28F593BA00777D49 /* Debug */,
+				069ED35D28F593BA00777D49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
