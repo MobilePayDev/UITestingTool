@@ -16,7 +16,8 @@ test.
     + [Step 2: Add UITestingTool as subproject](#step-2--add-uitestingtool-as-subproject)
     + [Step 3: Link dependencies to targets](#step-3--link-dependencies-to-targets)
 - [Set Up and run your first test](#set-up-and-run-your-first-test)
-    + [Step 1: Setup UI tests execution target](#step-1--setup-ui-tests-execution-target)
+    + [Step 1 (XCUITest): Setup UI tests execution target](#step-1--xcuitest---setup-ui-tests-execution-target)
+    + [Step 1 (KIF): Setup UI tests execution target](#step-1--kif---setup-ui-tests-execution-target)
     + [Step 2: Setup simple UI for testing](#step-2--setup-simple-ui-for-testing)
     + [Step 3: First UI test](#step-3--first-ui-test)
     + [Step 4: Setup configuration injection](#step-4--setup-configuration-injection)
@@ -116,13 +117,21 @@ In the end you should have:
 
 ## Set Up and run your first test
 
-#### Step 1: Setup UI tests execution target
+#### Step 1 (XCUITest): Setup UI tests execution target
 
 Remove default generated tests from `YourApp_UITests_XCUITest` target.
 
 `YourApp_UITests_XCUITest` needs to be setupped to execute agnostic UI tests, that is done by copying 3 template files from `UITestingTool/templates/XCUITest_Target` and adding them to `YourApp_UITests_XCUITest` target.
 
 <img src="images/xcuitest_target_template.png" width="500"> 
+
+#### Step 1 (KIF): Setup UI tests execution target
+
+Remove default generated tests from `YourApp_UITests_KIF` target.
+
+`YourApp_UITests_KIF` needs to be setupped to execute agnostic UI tests, that is done by copying 4 template files from `UITestingTool/templates/KIF_Target` and adding them to `YourApp_UITests_KIF` target.
+
+<img src="images/kif_target_template.png" width="500"> 
 
 #### Step 2: Setup simple UI for testing
 
