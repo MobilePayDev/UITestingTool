@@ -58,16 +58,24 @@ Creating unit tests excution target. **KIF runs via Unit tests target!**
 - Drag `UITestingConfiguration` to your project and link to:
     - `YourApp` target
     - `YourApp_UITests_XCUITest` target
+    - `YourApp_UITests_KIF` target
 - Drag `UITestingTool` to your project and link to:
     - `YourApp_UITests_XCUITest` target
+    - `YourApp_UITests_KIF` target
 - Drag `XCUITestDriver` to your project and link to:
     - `YourApp_UITests_XCUITest` target
-    
+- Drag `KIFDriver` to your project and link to:
+    - `YourApp_UITests_KIF` target
+
+For `YourApp_UITests_KIF` add KIF framework in your prefered way (follow instructions in [KIF repo](https://github.com/kif-framework/KIF) )
+
 In the end you should have:
 
 <img src="images/app_target_dependencies.png" width="500">
 
 <img src="images/xcuitest_target_dependencies.png" width="500">
+
+<img src="images/kif_target_dependencies.png" width="500">
 
 ### GitHub Installation
 
@@ -87,16 +95,24 @@ Drag in UITestingTool project to your Xcode project or workspace. After doing th
 - Link `UITestingConfiguration` to:
     - `YourApp` target
     - `YourApp_UITests_XCUITest` target
+    - `YourApp_UITests_KIF` target
 - Link `UITestingTool` to:
     - `YourApp_UITests_XCUITest` target
+    - `YourApp_UITests_KIF` target
 - Link `XCUITestDriver` to:
     - `YourApp_UITests_XCUITest` target
+- Link `KIFDriver` to:
+    - `YourApp_UITests_KIF` target
+
+For `YourApp_UITests_KIF` add KIF framework in your prefered way (follow instructions in [KIF repo](https://github.com/kif-framework/KIF) )
     
 In the end you should have:
 
 <img src="images/app_target_dependencies.png" width="500">
 
 <img src="images/xcuitest_target_dependencies.png" width="500">
+
+<img src="images/kif_target_dependencies.png" width="500">
 
 ## Set Up and run your first test
 
