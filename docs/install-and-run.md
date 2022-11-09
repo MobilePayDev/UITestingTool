@@ -4,6 +4,23 @@
 This document shows you how to install UITestingTool and then how to set up and run your first
 test.
 
+- [Install](#install)
+    + [Step 0: Create "UI Testing Bundle" target](#step-0--create--ui-testing-bundle--target)
+  * [Swift Package Manager Installation](#swift-package-manager-installation)
+  * [Carthage Installation](#carthage-installation)
+    + [Step 1: Install dependencies via Carthage](#step-1--install-dependencies-via-carthage)
+    + [Step 2: Add dependencies to the project](#step-2--add-dependencies-to-the-project)
+  * [GitHub Installation](#github-installation)
+    + [Step 1: Download project](#step-1--download-project)
+    + [Step 2: Add UITestingTool as subproject](#step-2--add-uitestingtool-as-subproject)
+    + [Step 3: Link dependencies to targets](#step-3--link-dependencies-to-targets)
+- [Set Up and run your first test](#set-up-and-run-your-first-test)
+    + [Step 1: Setup UI tests execution target](#step-1--setup-ui-tests-execution-target)
+    + [Step 2: Setup simple UI for testing](#step-2--setup-simple-ui-for-testing)
+    + [Step 3: First UI test](#step-3--first-ui-test)
+    + [Step 4: Setup configuration injection](#step-4--setup-configuration-injection)
+    + [Step 5: Apply first configuration](#step-5--apply-first-configuration)
+
 ## Install
 
 You can add UITestingTool to Xcode projects in three ways: using [SPM](#swift-package-manager-installation), [Carthage](#carthage-installation) or [Manually](#github-installation) through the Xcode Project.
