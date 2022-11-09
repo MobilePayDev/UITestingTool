@@ -4,17 +4,44 @@
 This document shows you how to install UITestingTool and then how to set up and run your first
 test.
 
+- [Install](#install)
+    + [Step 0 (XCUITest): Create "UI Testing Bundle" target](#step-0--xcuitest---create--ui-testing-bundle--target)
+    + [Step 0 (KIF): Create "Unit Testing Bundle" target](#step-0--kif---create--unit-testing-bundle--target)
+  * [Swift Package Manager Installation](#swift-package-manager-installation)
+  * [Carthage Installation](#carthage-installation)
+    + [Step 1: Install dependencies via Carthage](#step-1--install-dependencies-via-carthage)
+    + [Step 2: Add dependencies to the project](#step-2--add-dependencies-to-the-project)
+  * [GitHub Installation](#github-installation)
+    + [Step 1: Download project](#step-1--download-project)
+    + [Step 2: Add UITestingTool as subproject](#step-2--add-uitestingtool-as-subproject)
+    + [Step 3: Link dependencies to targets](#step-3--link-dependencies-to-targets)
+- [Set Up and run your first test](#set-up-and-run-your-first-test)
+    + [Step 1 (XCUITest): Setup UI tests execution target](#step-1--xcuitest---setup-ui-tests-execution-target)
+    + [Step 1 (KIF): Setup UI tests execution target](#step-1--kif---setup-ui-tests-execution-target)
+    + [Step 2: Setup simple UI for testing](#step-2--setup-simple-ui-for-testing)
+    + [Step 3: First UI test](#step-3--first-ui-test)
+    + [Step 4: Setup configuration injection](#step-4--setup-configuration-injection)
+    + [Step 5: Apply first configuration](#step-5--apply-first-configuration)
+
 ## Install
 
 You can add UITestingTool to Xcode projects in three ways: using [SPM](#swift-package-manager-installation), [Carthage](#carthage-installation) or [Manually](#github-installation) through the Xcode Project.
 
-#### Step 0: Create "UI Testing Bundle" target
+#### Step 0 (XCUITest): Create "UI Testing Bundle" target
 
-Creating UI tests excution target is needed for all instalation variants
+Creating UI tests excution target
 
 <img src="images/template_ui_testing_bundle.png" width="500">
 
 <img src="images/new_target_for_xcuitest.png" width="500">
+
+#### Step 0 (KIF): Create "Unit Testing Bundle" target
+
+Creating unit tests excution target. **KIF runs via Unit tests target!**
+
+<img src="images/template_unit_testing_bundle.png" width="500">
+
+<img src="images/new_target_for_kif.png" width="500">
 
 ### Swift Package Manager Installation
 
@@ -32,16 +59,24 @@ Creating UI tests excution target is needed for all instalation variants
 - Drag `UITestingConfiguration` to your project and link to:
     - `YourApp` target
     - `YourApp_UITests_XCUITest` target
+    - `YourApp_UITests_KIF` target
 - Drag `UITestingTool` to your project and link to:
     - `YourApp_UITests_XCUITest` target
+    - `YourApp_UITests_KIF` target
 - Drag `XCUITestDriver` to your project and link to:
     - `YourApp_UITests_XCUITest` target
-    
+- Drag `KIFDriver` to your project and link to:
+    - `YourApp_UITests_KIF` target
+
+For `YourApp_UITests_KIF` add KIF framework in your prefered way (follow instructions in [KIF repo](https://github.com/kif-framework/KIF) )
+
 In the end you should have:
 
 <img src="images/app_target_dependencies.png" width="500">
 
 <img src="images/xcuitest_target_dependencies.png" width="500">
+
+<img src="images/kif_target_dependencies.png" width="500">
 
 ### GitHub Installation
 
@@ -61,10 +96,16 @@ Drag in UITestingTool project to your Xcode project or workspace. After doing th
 - Link `UITestingConfiguration` to:
     - `YourApp` target
     - `YourApp_UITests_XCUITest` target
+    - `YourApp_UITests_KIF` target
 - Link `UITestingTool` to:
     - `YourApp_UITests_XCUITest` target
+    - `YourApp_UITests_KIF` target
 - Link `XCUITestDriver` to:
     - `YourApp_UITests_XCUITest` target
+- Link `KIFDriver` to:
+    - `YourApp_UITests_KIF` target
+
+For `YourApp_UITests_KIF` add KIF framework in your prefered way (follow instructions in [KIF repo](https://github.com/kif-framework/KIF) )
     
 In the end you should have:
 
@@ -72,15 +113,25 @@ In the end you should have:
 
 <img src="images/xcuitest_target_dependencies.png" width="500">
 
+<img src="images/kif_target_dependencies.png" width="500">
+
 ## Set Up and run your first test
 
-#### Step 1: Setup UI tests execution target
+#### Step 1 (XCUITest): Setup UI tests execution target
 
 Remove default generated tests from `YourApp_UITests_XCUITest` target.
 
 `YourApp_UITests_XCUITest` needs to be setupped to execute agnostic UI tests, that is done by copying 3 template files from `UITestingTool/templates/XCUITest_Target` and adding them to `YourApp_UITests_XCUITest` target.
 
 <img src="images/xcuitest_target_template.png" width="500"> 
+
+#### Step 1 (KIF): Setup UI tests execution target
+
+Remove default generated tests from `YourApp_UITests_KIF` target.
+
+`YourApp_UITests_KIF` needs to be setupped to execute agnostic UI tests, that is done by copying 4 template files from `UITestingTool/templates/KIF_Target` and adding them to `YourApp_UITests_KIF` target.
+
+<img src="images/kif_target_template.png" width="500"> 
 
 #### Step 2: Setup simple UI for testing
 

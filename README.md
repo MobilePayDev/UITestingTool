@@ -22,7 +22,7 @@ Currently UITestingTool not reached major version and breaking API changes could
 - [x] Write generic UI tests
 - [x] Run same UI tests on different frameworks (XCUITest, KIF, etc)
     - [x] Run on XCUITest
-    - [ ] Run on KIF
+    - [x] Run on KIF
 - [x] Override default behaviour of interactions (how to access views, how to assert, etc)
     - Enables to fix issues locally without branching out
     - Enables to use different implementation for default interactions 
