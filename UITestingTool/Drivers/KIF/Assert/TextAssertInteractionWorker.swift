@@ -29,6 +29,27 @@ final class TextAssertInteractionWorker: KIFInteractionWorker {
             return
         }
 
+        guard interaction.assertion == .equal else {
+            let text: String?
+            if let label = element.view as? UILabel {
+                text = label.text
+            } else if let textInput = element.view as? UITextInput {
+                let start = textInput.beginningOfDocument
+                let end = textInput.endOfDocument
+                if let range = textInput.textRange(from: start, to: end) {
+                    text = textInput.text(in: range)
+                } else {
+                    text = ""
+                }
+            } else {
+                text = ""
+            }
+            
+            Assert.notEqual(text, interaction.text, "Expected text: \"\(interaction.text)\" to be different from text: \"\(text ?? "")\"",
+                            in: interaction.context)
+            return
+        }
+        
         element.expect(toContainText: interaction.text)
     }
 }
