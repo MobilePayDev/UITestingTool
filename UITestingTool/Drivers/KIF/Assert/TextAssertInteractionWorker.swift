@@ -24,8 +24,14 @@ final class TextAssertInteractionWorker: KIFInteractionWorker {
                 text = element.view.accessibilityLabel ?? element.view.accessibilityValue
             }
             
-            Assert.equal(text, interaction.text, "Expected text: \"\(interaction.text)\", got text: \"\(element.view.accessibilityLabel ?? "")\"",
-                         in: interaction.context)
+            if interaction.assertion == .equal {
+                Assert.equal(text, interaction.text, "Expected text: \"\(interaction.text)\", got text: \"\(element.view.accessibilityLabel ?? "")\"",
+                             in: interaction.context)
+            } else {
+                Assert.notEqual(text, interaction.text, "Expected text: \"\(interaction.text)\" to be different from text: \"\(text ?? "")\"",
+                                in: interaction.context)
+            }
+            
             return
         }
 
