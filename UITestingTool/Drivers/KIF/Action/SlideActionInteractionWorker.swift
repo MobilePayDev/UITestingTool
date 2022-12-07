@@ -11,13 +11,13 @@ final class SlideActionInteractionWorker: KIFInteractionWorker {
             return
         }
         
-        guard element.view != nil, element.view.isVisibleInWindowFrame() else {
+        guard let elementView = element.view, elementView.isVisibleInWindowFrame() else {
             Assert.fail("Element does not exist", in: interaction.context)
             return
         }
 
-        (element.view as? UISlider)?.value = interaction.value
-        (element.view as? UISlider)?.sendActions(for: .valueChanged)
-        (element.view as? UISlider)?.sendActions(for: .touchUpInside)
+        (elementView as? UISlider)?.value = interaction.value
+        (elementView as? UISlider)?.sendActions(for: .valueChanged)
+        (elementView as? UISlider)?.sendActions(for: .touchUpInside)
     }
 }

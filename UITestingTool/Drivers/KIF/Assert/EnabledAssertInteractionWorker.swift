@@ -10,16 +10,16 @@ final class EnabledAssertInteractionWorker: KIFInteractionWorker {
             return
         }
 
-        guard element.view != nil else {
+        guard let elementView = element.view else {
             Assert.fail("Element does not exist", in: interaction.context)
             return
         }
         
-        guard let control = element.view as? UIControl else {
+        guard let control = elementView as? UIControl else {
             if interaction.isEnabled {
-                Assert.true(element.view.isUserInteractionEnabled, "Element is not enabled", in: interaction.context)
+                Assert.true(elementView.isUserInteractionEnabled, "Element is not enabled", in: interaction.context)
             } else {
-                Assert.false(element.view.isUserInteractionEnabled, "Element is not disabled", in: interaction.context)
+                Assert.false(elementView.isUserInteractionEnabled, "Element is not disabled", in: interaction.context)
             }
             return
         }

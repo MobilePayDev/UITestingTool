@@ -8,13 +8,15 @@ final class TapActionInteractionWorker: KIFInteractionWorker {
         // Appears to help in situations where element to tap is 'animating' i.e scrolling
         element.waitForAnimationsToFinish()
         
-        if let switchElement = element.view as? UISwitch {
+        let elementView: UIView! = element.view
+        
+        if let switchElement = elementView as? UISwitch {
             element.setSwitchOn(!switchElement.isOn)
             return
         }
         
-        if element.view != nil, !element.view.isUserInteractionEnabled {
-            element.view.superview?.tap(at: .zero)
+        if elementView != nil, !elementView.isUserInteractionEnabled {
+            elementView.superview?.tap(at: .zero)
         } else {
             // Appears to help whenever we call `tap`
             element.waitForAnimationsToFinish()

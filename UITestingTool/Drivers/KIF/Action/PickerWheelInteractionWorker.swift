@@ -11,12 +11,12 @@ final class PickerWheelInteractionWorker: KIFInteractionWorker {
             return
         }
         
-        guard element.view != nil, element.view.isVisibleInWindowFrame() else {
+        guard let elementView = element.view, elementView.isVisibleInWindowFrame() else {
             Assert.fail("Element does not exist", in: interaction.context)
             return
         }
         
-        if let datePicker = element.view as? UIDatePicker {
+        if let datePicker = elementView as? UIDatePicker {
             let date = datePicker.date
             
             switch interaction.action {

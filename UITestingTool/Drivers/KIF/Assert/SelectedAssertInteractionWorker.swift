@@ -11,11 +11,13 @@ final class SelectedAssertInteractionWorker: KIFInteractionWorker {
             return
         }
 
-        guard element.view.isVisibleInWindowFrame(),
-              let element = element.view as? UIControl else {
+        let elementView = element.view
+        
+        guard elementView?.isVisibleInWindowFrame() == true,
+              let element = elementView as? UIControl else {
             
-            if let segmentedControl = element.view?.superview as? UISegmentedControl {
-                let identifier = element.view?.accessibilityIdentifier
+            if let segmentedControl = elementView?.superview as? UISegmentedControl {
+                let identifier = elementView?.accessibilityIdentifier
                 let selectedIndex = segmentedControl.selectedSegmentIndex
                 
                 var subviews = segmentedControl.subviews.filter {
@@ -36,7 +38,7 @@ final class SelectedAssertInteractionWorker: KIFInteractionWorker {
                     Assert.false(isSelected, "Element is selected", in: interaction.context)
                 }
             } else {
-                let isSelected = element.view.accessibilityTraits.contains(.selected)
+                let isSelected = elementView?.accessibilityTraits.contains(.selected) == true
                 if interaction.isSelected {
                     Assert.true(isSelected, "Element is not selected", in: interaction.context)
                 } else {

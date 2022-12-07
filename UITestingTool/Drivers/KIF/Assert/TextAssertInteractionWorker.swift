@@ -10,22 +10,22 @@ final class TextAssertInteractionWorker: KIFInteractionWorker {
             return
         }
 
-        guard element.view != nil && element.view.isVisibleInViewHierarchy() else {
+        guard let elementView = element.view, elementView.isVisibleInViewHierarchy() else {
             Assert.fail("Element does not exist", in: interaction.context)
             return
         }
 
-        guard element.view is UITextInput || element.view is UILabel else {
+        guard elementView is UITextInput || elementView is UILabel else {
             let text: String?
             
-            if let navigationBar = element.view as? UINavigationBar {
+            if let navigationBar = elementView as? UINavigationBar {
                 text = navigationBar.titleLabel()?.text
             } else {
-                text = element.view.accessibilityLabel ?? element.view.accessibilityValue
+                text = elementView.accessibilityLabel ?? elementView.accessibilityValue
             }
             
             if interaction.assertion == .equal {
-                Assert.equal(text, interaction.text, "Expected text: \"\(interaction.text)\", got text: \"\(element.view.accessibilityLabel ?? "")\"",
+                Assert.equal(text, interaction.text, "Expected text: \"\(interaction.text)\", got text: \"\(elementView.accessibilityLabel ?? "")\"",
                              in: interaction.context)
             } else {
                 Assert.notEqual(text, interaction.text, "Expected text: \"\(interaction.text)\" to be different from text: \"\(text ?? "")\"",
@@ -37,9 +37,9 @@ final class TextAssertInteractionWorker: KIFInteractionWorker {
 
         guard interaction.assertion == .equal else {
             let text: String?
-            if let label = element.view as? UILabel {
+            if let label = elementView as? UILabel {
                 text = label.text
-            } else if let textInput = element.view as? UITextInput {
+            } else if let textInput = elementView as? UITextInput {
                 let start = textInput.beginningOfDocument
                 let end = textInput.endOfDocument
                 if let range = textInput.textRange(from: start, to: end) {

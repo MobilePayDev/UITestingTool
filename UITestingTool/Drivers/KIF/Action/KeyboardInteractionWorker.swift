@@ -10,7 +10,7 @@ final class KeyboardInteractionWorker: KIFInteractionWorker {
             return
         }
 
-        guard element.view != nil, element.view.isVisibleInViewHierarchy() else {
+        guard let elementView = element.view, elementView.isVisibleInViewHierarchy() else {
             Assert.fail("Element does not exist", in: interaction.context)
             return
         }

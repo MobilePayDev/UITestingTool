@@ -10,8 +10,8 @@ final class ToggleAssertInteractionWorker: KIFInteractionWorker {
             return
         }
 
-        guard element.view.isVisibleInWindowFrame(),
-        let toggle = element.view as? UISwitch else {
+        guard let elementView = element.view, elementView.isVisibleInWindowFrame(),
+        let toggle = elementView as? UISwitch else {
             Assert.fail("Element does not exist", in: interaction.context)
             return
         }

@@ -9,7 +9,7 @@ final class VisibilityAssertInteractionWorker: KIFInteractionWorker {
             return
         }
         
-        guard element.view != nil else {
+        guard let elementView = element.view else {
             if interaction.visibility == .sufficientlyVisible {
                 Assert.fail("Element does not exist", in: interaction.context)
             }
@@ -18,12 +18,11 @@ final class VisibilityAssertInteractionWorker: KIFInteractionWorker {
         
         switch interaction.visibility {
         case .sufficientlyVisible:
-            Assert.true(!element.view.frame.isEmpty, "Element has empty frame", in: interaction.context)
-            Assert.true(element.view.isVisibleInViewHierarchy(), "Element not visible on screen", in: interaction.context)
+            Assert.true(!elementView.frame.isEmpty, "Element has empty frame", in: interaction.context)
+            Assert.true(elementView.isVisibleInViewHierarchy(), "Element not visible on screen", in: interaction.context)
         case .notVisible:
-            guard element.view != nil else { return }
-            let hasInvalidFrame = element.view.frame.height == 0 || element.view.frame.width == 0 || element.view.alpha == 0.0
-            Assert.true(!element.view.isVisibleInWindowFrame() || hasInvalidFrame, "Element is visible on screen", in: interaction.context)
+            let hasInvalidFrame = elementView.frame.height == 0 || elementView.frame.width == 0 || elementView.alpha == 0.0
+            Assert.true(!elementView.isVisibleInWindowFrame() || hasInvalidFrame, "Element is visible on screen", in: interaction.context)
         }
     }
 }

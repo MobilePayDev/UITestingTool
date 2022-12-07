@@ -27,8 +27,8 @@ final class ScrollActionInteractionWorker: KIFInteractionWorker {
     }
 
     private func furthestElement(for edge: ScrollEdge) -> UIView? {
-        guard var furthestChild = element.view.subviews.first else { return nil }
-        for child in element.view.subviews {
+        guard let elementView = element.view, var furthestChild = elementView.subviews.first else { return nil }
+        for child in elementView.subviews {
             switch edge {
             case .top:
                 if child.frame.minY < furthestChild.frame.minY {
@@ -56,38 +56,39 @@ final class ScrollActionInteractionWorker: KIFInteractionWorker {
         let contentView = targetElement
         
         let maxNumberOfSwipes = 100
+        let elementView: UIView! = element.view
         for _ in 0..<maxNumberOfSwipes {
             switch edge {
             case .top:
-                let scrollViewTopLeft = element.view.frame.origin
-                guard let contentViewTopLeft = element.view.superview?.convert(contentView.bounds.origin, from: contentView) else { break }
+                let scrollViewTopLeft = elementView.frame.origin
+                guard let contentViewTopLeft = elementView.superview?.convert(contentView.bounds.origin, from: contentView) else { break }
                 if contentViewTopLeft.y < scrollViewTopLeft.y {
                     element.gentleSwipe(.up)
                 } else {
                     break
                 }
             case .bottom:
-                let scrollViewBottomLeft = CGPoint(x: element.view.frame.minX, y: element.view.frame.maxY)
+                let scrollViewBottomLeft = CGPoint(x: elementView.frame.minX, y: elementView.frame.maxY)
                 
                 let contentViewBottomLeft = CGPoint(x: contentView.bounds.minX, y: contentView.bounds.maxY)
-                guard let contentViewBottomLeftNormalised = element.view.superview?.convert(contentViewBottomLeft, from: contentView) else { break }
+                guard let contentViewBottomLeftNormalised = elementView.superview?.convert(contentViewBottomLeft, from: contentView) else { break }
                 if contentViewBottomLeftNormalised.y > scrollViewBottomLeft.y {
                     element.gentleSwipe(.down)
                 } else {
                     break
                 }
             case .left:
-                let scrollViewTopLeft = element.view.frame.origin
-                guard let contentViewTopLeft = element.view.superview?.convert(contentView.bounds.origin, from: contentView) else { break }
+                let scrollViewTopLeft = elementView.frame.origin
+                guard let contentViewTopLeft = elementView.superview?.convert(contentView.bounds.origin, from: contentView) else { break }
                 if contentViewTopLeft.x < scrollViewTopLeft.x {
                     element.gentleSwipe(.right)
                 } else {
                     break
                 }
             case .right:
-                let scrollViewTopRight = CGPoint(x: element.view.frame.maxX, y: element.view.frame.minY)
+                let scrollViewTopRight = CGPoint(x: elementView.frame.maxX, y: elementView.frame.minY)
                 let contentViewTopRight = CGPoint(x: contentView.bounds.maxX, y: contentView.bounds.minY)
-                guard let contentViewTopRightNormalised = element.view.superview?.convert(contentViewTopRight, from: contentView) else { break }
+                guard let contentViewTopRightNormalised = elementView.superview?.convert(contentViewTopRight, from: contentView) else { break }
                 if contentViewTopRightNormalised.x > scrollViewTopRight.x {
                     element.gentleSwipe(.left)
                 } else {
