@@ -1,6 +1,7 @@
 import KIFDriver
 import UIKit
 import KIF
+import Foundation
 
 extension KIFDependencies {
     

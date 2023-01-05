@@ -1,4 +1,5 @@
 import UITestingTool
+import Foundation
 
 class KIFInteractionWorker: NSObject, InteractionWorker, KIFTestActorDelegateInterface { // swiftlint:disable:this final_class
     let element: KIFUIViewTestActor!
