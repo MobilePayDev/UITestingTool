@@ -222,6 +222,7 @@
 		61D4910B2743AA490042B318 /* AccessibilityElementInteraction+Elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccessibilityElementInteraction+Elements.swift"; sourceTree = "<group>"; };
 		66A8C4EF26EF826B000337CD /* ToggleAssertInteraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleAssertInteraction.swift; sourceTree = "<group>"; };
 		66A8C4FB26EF8889000337CD /* ToggleAssertInteractionWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleAssertInteractionWorker.swift; sourceTree = "<group>"; };
+		AC29B8FB2966B65F00D5901B /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,12 +300,14 @@
 		068CA16D260DEDF600EAC0EE = {
 			isa = PBXGroup;
 			children = (
+				AC29B8FB2966B65F00D5901B /* Package.swift */,
 				069E5BCB285B78BC0005A6DC /* README.md */,
 				0607158828868A3B000256D5 /* docs */,
 				0607158928868B5D000256D5 /* templates */,
 				068CA178260DEDF600EAC0EE /* UITestingTool */,
 				0672249E2617518E00D15B24 /* UITestingConfiguration */,
 				069E5B1C2859F2360005A6DC /* UITestingConfiguration_UnitTests */,
+				AC29B9022966E99B00D5901B /* Drivers */,
 				069E5B62285A10990005A6DC /* Demo */,
 				068CA177260DEDF600EAC0EE /* Products */,
 				068CA23F260E0B5A00EAC0EE /* Frameworks */,
@@ -404,13 +407,11 @@
 			isa = PBXGroup;
 			children = (
 				068CA260260E184C00EAC0EE /* Driver.swift */,
-				068CA25E260E181200EAC0EE /* XCUITest */,
-				069ED36428F5943700777D49 /* KIF */,
 			);
 			path = Drivers;
 			sourceTree = "<group>";
 		};
-		068CA25E260E181200EAC0EE /* XCUITest */ = {
+		068CA25E260E181200EAC0EE /* XCUITestDriver */ = {
 			isa = PBXGroup;
 			children = (
 				06A021402881892000E0F91D /* XCUITestDriver.h */,
@@ -422,7 +423,7 @@
 				068CA3B62613ABE600EAC0EE /* Assert */,
 				068CA2B7260E298B00EAC0EE /* Element */,
 			);
-			path = XCUITest;
+			path = XCUITestDriver;
 			sourceTree = "<group>";
 		};
 		068CA2B7260E298B00EAC0EE /* Element */ = {
@@ -486,7 +487,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		069ED36428F5943700777D49 /* KIF */ = {
+		069ED36428F5943700777D49 /* KIFDriver */ = {
 			isa = PBXGroup;
 			children = (
 				069ED3D028F5FEBF00777D49 /* Dependencies */,
@@ -500,7 +501,7 @@
 				069ED3B728F5A15C00777D49 /* Value */,
 				069ED3AC28F5A15C00777D49 /* Wait */,
 			);
-			path = KIF;
+			path = KIFDriver;
 			sourceTree = "<group>";
 		};
 		069ED3A228F5A15C00777D49 /* Element */ = {
@@ -601,6 +602,15 @@
 				06F6CBA5269EF44100605EC9 /* ConfigurationDecoder.swift */,
 			);
 			path = Serialization;
+			sourceTree = "<group>";
+		};
+		AC29B9022966E99B00D5901B /* Drivers */ = {
+			isa = PBXGroup;
+			children = (
+				068CA25E260E181200EAC0EE /* XCUITestDriver */,
+				069ED36428F5943700777D49 /* KIFDriver */,
+			);
+			path = Drivers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
