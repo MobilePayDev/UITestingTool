@@ -10,10 +10,10 @@ let package = Package(
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
-        .library(name: "UITestingTool", type: .dynamic, targets: ["UITestingTool"]),
-        .library(name: "UITestingConfiguration", type: .dynamic, targets: ["UITestingConfiguration"]),
-        .library(name: "XCUITestDriver", type: .dynamic, targets: ["XCUITestDriver"]),
-        .library(name: "KIFDriver", type: .dynamic, targets: ["KIFDriver"]),
+        .library(name: "UITestingTool", targets: ["UITestingTool"]),
+        .library(name: "UITestingConfiguration", targets: ["UITestingConfiguration"]),
+        .library(name: "XCUITestDriver", targets: ["XCUITestDriver"]),
+        .library(name: "KIFDriver", targets: ["KIFDriver"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
