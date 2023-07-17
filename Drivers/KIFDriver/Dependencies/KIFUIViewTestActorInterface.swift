@@ -17,6 +17,9 @@ public protocol KIFUIViewTestActorInterface {
     
     // - (instancetype)usingTimeout:(NSTimeInterval)executionBlockTimeout
     @discardableResult func usingTimeout(_ executionBlockTimeout: TimeInterval) -> Self
+
+    // - (instancetype)usingPredicate:(NSPredicate *)predicate
+    @discardableResult func usingPredicate(_ predicate: NSPredicate) -> Self
     
     // - (void)waitForAnimationsToFinish;
     func waitForAnimationsToFinish()

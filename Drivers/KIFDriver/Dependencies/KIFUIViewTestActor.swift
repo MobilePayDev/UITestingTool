@@ -21,6 +21,11 @@ final class KIFUIViewTestActor: KIFUIViewTestActorInterface {
         actor.usingTimeout(executionBlockTimeout)
         return self
     }
+
+    @discardableResult func usingPredicate(_ predicate: NSPredicate) -> Self {
+        actor.usingPredicate(predicate)
+        return self
+    }
     
     func waitForAnimationsToFinish() {
         actor.waitForAnimationsToFinish()
