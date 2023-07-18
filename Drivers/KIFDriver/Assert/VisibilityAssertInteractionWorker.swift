@@ -20,6 +20,7 @@ final class VisibilityAssertInteractionWorker: KIFInteractionWorker {
         case .sufficientlyVisible:
             Assert.true(!elementView.frame.isEmpty, "Element has empty frame", in: interaction.context)
             Assert.true(elementView.isVisibleInViewHierarchy(), "Element not visible on screen", in: interaction.context)
+            Assert.true(elementView.window?.isKeyWindow == true, "Element not in key window", in: interaction.context)
         case .notVisible:
             let hasInvalidFrame = elementView.frame.height == 0 || elementView.frame.width == 0 || elementView.alpha == 0.0
             Assert.true(!elementView.isVisibleInWindowFrame() || hasInvalidFrame, "Element is visible on screen", in: interaction.context)
