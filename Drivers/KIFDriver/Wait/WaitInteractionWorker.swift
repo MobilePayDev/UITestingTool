@@ -15,7 +15,7 @@ final class WaitInteractionWorker: KIFInteractionWorker {
 
         switch interaction.event {
         case .exist:
-            Assert.true(element.view != nil, "Wait for exist timed out", in: interaction.context)
+            Assert.true(element.view != nil, "Wait for element '\(accessibilityIdentifier)' exist timed out", in: interaction.context)
         case let .existOrNot(completion):
             completion(element.view != nil)
         }

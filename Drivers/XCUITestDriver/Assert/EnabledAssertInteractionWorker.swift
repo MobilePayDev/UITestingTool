@@ -16,14 +16,14 @@ struct EnabledAssertInteractionWorker: InteractionWorker {
         }
 
         guard element.exists else {
-            Assert.fail("Element does not exist", in: interaction.context)
+            Assert.fail("Element '\(element.identifier)' does not exist", in: interaction.context)
             return
         }
         
         if interaction.isEnabled {
-            Assert.true(element.isEnabled, "Element is not enabled", in: interaction.context)
+            Assert.true(element.isEnabled, "Element '\(element.identifier)' is not enabled", in: interaction.context)
         } else {
-            Assert.false(element.isEnabled, "Element is not disabled", in: interaction.context)
+            Assert.false(element.isEnabled, "Element '\(element.identifier)' is not disabled", in: interaction.context)
         }
     }
 }

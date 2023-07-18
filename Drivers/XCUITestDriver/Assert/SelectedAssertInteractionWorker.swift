@@ -16,9 +16,9 @@ struct SelectedAssertInteractionWorker: InteractionWorker {
         }
 
         if interaction.isSelected {
-            Assert.true(element.isSelected, "Element is not selected", in: interaction.context)
+            Assert.true(element.isSelected, "Element '\(element.identifier)' is not selected", in: interaction.context)
         } else {
-            Assert.false(element.isSelected, "Element is selected", in: interaction.context)
+            Assert.false(element.isSelected, "Element '\(element.identifier)' is selected", in: interaction.context)
         }
     }
 }

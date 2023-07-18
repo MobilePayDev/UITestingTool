@@ -11,7 +11,7 @@ final class TextAssertInteractionWorker: KIFInteractionWorker {
         }
 
         guard let elementView = element.view, elementView.isVisibleInViewHierarchy() else {
-            Assert.fail("Element does not exist", in: interaction.context)
+            Assert.fail("Element '\(accessibilityIdentifier)' does not exist", in: interaction.context)
             return
         }
 
@@ -25,10 +25,10 @@ final class TextAssertInteractionWorker: KIFInteractionWorker {
             }
             
             if interaction.assertion == .equal {
-                Assert.equal(text, interaction.text, "Expected text: \"\(interaction.text)\", got text: \"\(elementView.accessibilityLabel ?? "")\"",
+                Assert.equal(text, interaction.text, "Element '\(accessibilityIdentifier)' expected text: \"\(interaction.text)\", got text: \"\(elementView.accessibilityLabel ?? "")\"",
                              in: interaction.context)
             } else {
-                Assert.notEqual(text, interaction.text, "Expected text: \"\(interaction.text)\" to be different from text: \"\(text ?? "")\"",
+                Assert.notEqual(text, interaction.text, "Element '\(accessibilityIdentifier)' expected text: \"\(interaction.text)\" to be different from text: \"\(text ?? "")\"",
                                 in: interaction.context)
             }
             
@@ -51,7 +51,7 @@ final class TextAssertInteractionWorker: KIFInteractionWorker {
                 text = ""
             }
             
-            Assert.notEqual(text, interaction.text, "Expected text: \"\(interaction.text)\" to be different from text: \"\(text ?? "")\"",
+            Assert.notEqual(text, interaction.text, "Elemenet '\(accessibilityIdentifier)' expected text: \"\(interaction.text)\" to be different from text: \"\(text ?? "")\"",
                             in: interaction.context)
             return
         }

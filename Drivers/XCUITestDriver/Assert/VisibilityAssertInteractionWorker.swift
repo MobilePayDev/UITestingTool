@@ -18,9 +18,9 @@ struct VisibilityAssertInteractionWorker: InteractionWorker {
         
         switch interaction.visibility {
         case .sufficientlyVisible:
-            Assert.true(element.waitForExistence(timeout: existanceTimeout), "Element does not exist", in: interaction.context)
-            Assert.true(!element.frame.isEmpty, "Element has empty frame", in: interaction.context)
-            Assert.true(XCUIApplication().windows.element(boundBy: 0).frame.contains(element.frame), "Element not visible on screen", in: interaction.context)
+            Assert.true(element.waitForExistence(timeout: existanceTimeout), "Element '\(element.identifier)' does not exist", in: interaction.context)
+            Assert.true(!element.frame.isEmpty, "Element '\(element.identifier)' has empty frame", in: interaction.context)
+            Assert.true(XCUIApplication().windows.element(boundBy: 0).frame.contains(element.frame), "Element '\(element.identifier)' not visible on screen", in: interaction.context)
         case .notVisible:
             guard element.waitForExistence(timeout: existanceTimeout) else {
                 // If element do not exist it is not visible
@@ -31,7 +31,7 @@ struct VisibilityAssertInteractionWorker: InteractionWorker {
                 // Element frame is not visible on screen
                 return
             }
-            Assert.false(element.isHittable, "Element is hittable", in: interaction.context)
+            Assert.false(element.isHittable, "Element '\(element.identifier)' is hittable", in: interaction.context)
         }
     }
 }

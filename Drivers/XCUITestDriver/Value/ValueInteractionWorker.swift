@@ -16,7 +16,7 @@ struct ValueInteractionWorker: InteractionWorker {
         }
 
         guard element.exists else {
-            Assert.fail("Element does not exist", in: interaction.context)
+            Assert.fail("Element '\(element.identifier)' does not exist", in: interaction.context)
             return
         }
         

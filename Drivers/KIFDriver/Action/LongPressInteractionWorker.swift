@@ -11,7 +11,7 @@ final class LongPressInteractionWorker: KIFInteractionWorker {
         }
 
         guard let elementView = element.view, elementView.isVisibleInViewHierarchy() else {
-            Assert.fail("Element does not exist", in: interaction.context)
+            Assert.fail("Element '\(accessibilityIdentifier)' does not exist", in: interaction.context)
             return
         }
 

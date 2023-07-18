@@ -33,16 +33,16 @@ final class SelectedAssertInteractionWorker: KIFInteractionWorker {
                 let isSelected = selectedSegmentIdentifier == identifier
                 
                 if interaction.isSelected {
-                    Assert.true(isSelected, "Element is not selected", in: interaction.context)
+                    Assert.true(isSelected, "Element '\(accessibilityIdentifier)' is not selected", in: interaction.context)
                 } else {
-                    Assert.false(isSelected, "Element is selected", in: interaction.context)
+                    Assert.false(isSelected, "Element '\(accessibilityIdentifier)' is selected", in: interaction.context)
                 }
             } else {
                 let isSelected = elementView?.accessibilityTraits.contains(.selected) == true
                 if interaction.isSelected {
-                    Assert.true(isSelected, "Element is not selected", in: interaction.context)
+                    Assert.true(isSelected, "Element '\(accessibilityIdentifier)' is not selected", in: interaction.context)
                 } else {
-                    Assert.false(isSelected, "Element is selected", in: interaction.context)
+                    Assert.false(isSelected, "Element '\(accessibilityIdentifier)' is selected", in: interaction.context)
                 }
             }
             return
@@ -51,9 +51,9 @@ final class SelectedAssertInteractionWorker: KIFInteractionWorker {
         let isSelected = element.accessibilityTraits.contains(.selected) || element.isSelected
         
         if interaction.isSelected {
-            Assert.true(isSelected, "Element is not selected", in: interaction.context)
+            Assert.true(isSelected, "Element '\(accessibilityIdentifier)' is not selected", in: interaction.context)
         } else {
-            Assert.false(isSelected, "Element is selected", in: interaction.context)
+            Assert.false(isSelected, "Element '\(accessibilityIdentifier)' is selected", in: interaction.context)
         }
     }
 }

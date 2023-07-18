@@ -16,7 +16,7 @@ struct TextAssertInteractionWorker: InteractionWorker {
         }
 
         guard element.exists else {
-            Assert.fail("Element does not exist", in: interaction.context)
+            Assert.fail("Element '\(element.identifier)' does not exist", in: interaction.context)
             return
         }
 
@@ -38,9 +38,9 @@ struct TextAssertInteractionWorker: InteractionWorker {
         
         switch interaction.assertion {
         case .equal:
-            Assert.equal(elementText, expectedText, "Expected text: \"\(expectedText)\", got text: \"\(elementText ?? "")\"", in: interaction.context)
+            Assert.equal(elementText, expectedText, "Element '\(element.identifier)' expected text: \"\(expectedText)\", got text: \"\(elementText ?? "")\"", in: interaction.context)
         case .notEqual:
-            Assert.notEqual(elementText, expectedText, "Expected text: \"\(expectedText)\" to be different from text: \"\(elementText ?? "")\"", in: interaction.context)
+            Assert.notEqual(elementText, expectedText, "Element '\(element.identifier)' expected text: \"\(expectedText)\" to be different from text: \"\(elementText ?? "")\"", in: interaction.context)
         }
     }
 }

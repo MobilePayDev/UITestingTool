@@ -12,7 +12,7 @@ final class PickerWheelInteractionWorker: KIFInteractionWorker {
         }
         
         guard let elementView = element.view, elementView.isVisibleInWindowFrame() else {
-            Assert.fail("Element does not exist", in: interaction.context)
+            Assert.fail("Element '\(accessibilityIdentifier)' does not exist", in: interaction.context)
             return
         }
         
@@ -55,6 +55,6 @@ final class PickerWheelInteractionWorker: KIFInteractionWorker {
             return
         }
 
-        Assert.fail("Element is not a supported picker", in: interaction.context)
+        Assert.fail("Element '\(accessibilityIdentifier)' is not a supported picker", in: interaction.context)
     }
 }

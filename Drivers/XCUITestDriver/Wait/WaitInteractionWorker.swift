@@ -21,7 +21,7 @@ final class WaitInteractionWorker: InteractionWorker {
 
         switch interaction.event {
         case .exist:
-            Assert.true(exist, "Wait for exist timed out", in: interaction.context)
+            Assert.true(exist, "Wait for element '\(element.identifier)' exist timed out", in: interaction.context)
         case let .existOrNot(completion):
             completion(exist)
         }

@@ -16,10 +16,10 @@ struct LongPressInteractionWorker: InteractionWorker {
         }
 
         guard element.exists else {
-            Assert.fail("Element does not exist", in: interaction.context)
+            Assert.fail("Element '\(element.identifier)' does not exist", in: interaction.context)
             return
         }
-        Assert.true(element.isHittable, "Element is not hittable", in: interaction.context)
+        Assert.true(element.isHittable, "Element '\(element.identifier)' is not hittable", in: interaction.context)
         element.press(forDuration: interaction.duration)
     }
 }

@@ -16,14 +16,14 @@ struct ToggleAssertInteractionWorker: InteractionWorker {
         }
 
         guard element.exists else {
-            Assert.fail("Element does not exist", in: interaction.context)
+            Assert.fail("Element '\(element.identifier)' does not exist", in: interaction.context)
             return
         }
         
         if interaction.isOn {
-            Assert.true(element.isOn, "Switch is toggled on", in: interaction.context)
+            Assert.true(element.isOn, "Switch '\(element.identifier)' is toggled on", in: interaction.context)
         } else {
-            Assert.false(element.isOn, "Switch is toggled off", in: interaction.context)
+            Assert.false(element.isOn, "Switch '\(element.identifier)' is toggled off", in: interaction.context)
         }
     }
 }
