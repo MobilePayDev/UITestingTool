@@ -3,10 +3,15 @@ import XCTest
 
 final class AccessibilityElementInteractionWorker: InteractionElementWorker {
 
-    private let app: XCUIApplication!
+    private let parent: XCUIElement!
 
     init(driver: Driver) {
-        app = (driver as? XCUITestDriver)?.app
+        let driver = driver as? XCUITestDriver
+        if let element = driver?.element {
+            parent = element
+        } else {
+            parent = driver?.app
+        }
     }
 
     func element(for interaction: Interaction) -> Any? {
@@ -15,43 +20,43 @@ final class AccessibilityElementInteractionWorker: InteractionElementWorker {
         let query: XCUIElementQuery
         switch accessibilityInteraction.type {
         case .key:
-            query = app.keys.matching(identifier: accessibilityInteraction.accessibilityId)
+            query = parent.descendants(matching: .key).matching(identifier: accessibilityInteraction.accessibilityId)
         case .view:
-            query = app.otherElements.matching(identifier: accessibilityInteraction.accessibilityId)
+            query = parent.descendants(matching: .other).matching(identifier: accessibilityInteraction.accessibilityId)
         case .label:
-            query = app.staticTexts.matching(identifier: accessibilityInteraction.accessibilityId)
+            query = parent.descendants(matching: .staticText).matching(identifier: accessibilityInteraction.accessibilityId)
         case .button:
-            query = app.buttons.matching(identifier: accessibilityInteraction.accessibilityId)
+            query = parent.descendants(matching: .button).matching(identifier: accessibilityInteraction.accessibilityId)
         case .imageView:
-            query = app.images.matching(identifier: accessibilityInteraction.accessibilityId)
+            query = parent.descendants(matching: .image).matching(identifier: accessibilityInteraction.accessibilityId)
         case .textView:
-            query = app.textViews.matching(identifier: accessibilityInteraction.accessibilityId)
+            query = parent.descendants(matching: .textView).matching(identifier: accessibilityInteraction.accessibilityId)
         case .textField:
-            query = app.textFields.matching(identifier: accessibilityInteraction.accessibilityId)
+            query = parent.descendants(matching: .textField).matching(identifier: accessibilityInteraction.accessibilityId)
         case .searchField:
-            query = app.searchFields.matching(identifier: accessibilityInteraction.accessibilityId)
+            query = parent.descendants(matching: .searchField).matching(identifier: accessibilityInteraction.accessibilityId)
         case .webView:
-            query = app.webViews.matching(identifier: accessibilityInteraction.accessibilityId)
+            query = parent.descendants(matching: .webView).matching(identifier: accessibilityInteraction.accessibilityId)
         case .slider:
-            query = app.sliders.matching(identifier: accessibilityInteraction.accessibilityId)
+            query = parent.descendants(matching: .slider).matching(identifier: accessibilityInteraction.accessibilityId)
         case .scrollView:
-            query = app.scrollViews.matching(identifier: accessibilityInteraction.accessibilityId)
+            query = parent.descendants(matching: .scrollView).matching(identifier: accessibilityInteraction.accessibilityId)
         case .collectionView:
-            query = app.collectionViews.matching(identifier: accessibilityInteraction.accessibilityId)
+            query = parent.descendants(matching: .collectionView).matching(identifier: accessibilityInteraction.accessibilityId)
         case .tableView:
-            query = app.tables.matching(identifier: accessibilityInteraction.accessibilityId)
+            query = parent.descendants(matching: .table).matching(identifier: accessibilityInteraction.accessibilityId)
         case .cell:
-            query = app.cells.matching(identifier: accessibilityInteraction.accessibilityId)
+            query = parent.descendants(matching: .cell).matching(identifier: accessibilityInteraction.accessibilityId)
         case .segmentedControl:
-            query = app.segmentedControls.matching(identifier: accessibilityInteraction.accessibilityId)
+            query = parent.descendants(matching: .segmentedControl).matching(identifier: accessibilityInteraction.accessibilityId)
         case .switch:
-            query = app.switches.matching(identifier: accessibilityInteraction.accessibilityId)
+            query = parent.descendants(matching: .switch).matching(identifier: accessibilityInteraction.accessibilityId)
         case .navigationBar:
-            query = app.navigationBars.matching(identifier: accessibilityInteraction.accessibilityId)
+            query = parent.descendants(matching: .navigationBar).matching(identifier: accessibilityInteraction.accessibilityId)
         case .datePicker:
-            query = app.datePickers.matching(identifier: accessibilityInteraction.accessibilityId)
+            query = parent.descendants(matching: .datePicker).matching(identifier: accessibilityInteraction.accessibilityId)
         case .alert:
-            query = app.alerts.matching(identifier: accessibilityInteraction.accessibilityId)
+            query = parent.descendants(matching: .alert).matching(identifier: accessibilityInteraction.accessibilityId)
         }
 
         let element: XCUIElement = query.firstMatch
