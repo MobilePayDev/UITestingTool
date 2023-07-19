@@ -4,7 +4,7 @@ import Foundation
 class KIFInteractionWorker: NSObject, InteractionWorker, KIFTestActorDelegateInterface { // swiftlint:disable:this final_class
     let element: KIFUIViewTestActor!
     var accessibilityIdentifier: String {
-        return element.view.accessibilityIdentifier ?? "ACCESSIBILITY ID NOT AVAILABLE"
+        return element.view?.accessibilityIdentifier ?? "ACCESSIBILITY ID NOT AVAILABLE"
     }
     let driver: Driver
 
